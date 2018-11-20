@@ -31,12 +31,17 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUsers));
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.groupPanel4 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.btnDelete = new DevComponents.DotNetBar.ButtonX();
             this.btnSave = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.dgvUsers = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Access = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.cmbAccess = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,10 +49,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtPassword = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtUserName = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Access = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupPanel1.SuspendLayout();
             this.groupPanel4.SuspendLayout();
             this.groupPanel3.SuspendLayout();
@@ -66,7 +67,7 @@
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel1.Location = new System.Drawing.Point(0, 0);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(348, 378);
+            this.groupPanel1.Size = new System.Drawing.Size(382, 378);
             // 
             // 
             // 
@@ -107,7 +108,7 @@
             this.groupPanel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupPanel4.Location = new System.Drawing.Point(0, 330);
             this.groupPanel4.Name = "groupPanel4";
-            this.groupPanel4.Size = new System.Drawing.Size(342, 42);
+            this.groupPanel4.Size = new System.Drawing.Size(376, 42);
             // 
             // 
             // 
@@ -144,7 +145,7 @@
             this.btnDelete.BackColor = System.Drawing.Color.Transparent;
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDelete.Image = global::Matab.Properties.Resources.icons8_trash_32;
-            this.btnDelete.Location = new System.Drawing.Point(50, 0);
+            this.btnDelete.Location = new System.Drawing.Point(67, 0);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
             this.btnDelete.Size = new System.Drawing.Size(115, 35);
@@ -159,7 +160,7 @@
             this.btnSave.BackColor = System.Drawing.Color.Transparent;
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.Image = global::Matab.Properties.Resources.icons8_save_32;
-            this.btnSave.Location = new System.Drawing.Point(172, 1);
+            this.btnSave.Location = new System.Drawing.Point(189, 1);
             this.btnSave.Name = "btnSave";
             this.btnSave.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
             this.btnSave.Size = new System.Drawing.Size(115, 35);
@@ -177,7 +178,7 @@
             this.groupPanel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupPanel3.Location = new System.Drawing.Point(0, 120);
             this.groupPanel3.Name = "groupPanel3";
-            this.groupPanel3.Size = new System.Drawing.Size(342, 208);
+            this.groupPanel3.Size = new System.Drawing.Size(376, 208);
             // 
             // 
             // 
@@ -237,7 +238,7 @@
             this.dgvUsers.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvUsers.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvUsers.EnableHeadersVisualStyles = false;
-            this.dgvUsers.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+            this.dgvUsers.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dgvUsers.Location = new System.Drawing.Point(0, 0);
             this.dgvUsers.Name = "dgvUsers";
             this.dgvUsers.ReadOnly = true;
@@ -250,8 +251,38 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvUsers.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvUsers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUsers.Size = new System.Drawing.Size(336, 202);
+            this.dgvUsers.Size = new System.Drawing.Size(370, 202);
             this.dgvUsers.TabIndex = 0;
+            // 
+            // ID
+            // 
+            this.ID.DataPropertyName = "ID";
+            this.ID.HeaderText = "ردیف";
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            this.ID.Width = 50;
+            // 
+            // UserName
+            // 
+            this.UserName.DataPropertyName = "UserName";
+            this.UserName.HeaderText = "نام کاربری";
+            this.UserName.Name = "UserName";
+            this.UserName.ReadOnly = true;
+            // 
+            // Password
+            // 
+            this.Password.DataPropertyName = "Password";
+            this.Password.HeaderText = "کلمه عبور";
+            this.Password.Name = "Password";
+            this.Password.ReadOnly = true;
+            // 
+            // Access
+            // 
+            this.Access.DataPropertyName = "Access";
+            this.Access.HeaderText = "سطح دسترسی";
+            this.Access.Name = "Access";
+            this.Access.ReadOnly = true;
+            this.Access.Width = 130;
             // 
             // groupPanel2
             // 
@@ -267,7 +298,7 @@
             this.groupPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupPanel2.Location = new System.Drawing.Point(0, 0);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(342, 120);
+            this.groupPanel2.Size = new System.Drawing.Size(376, 120);
             // 
             // 
             // 
@@ -306,14 +337,14 @@
             "user"});
             this.cmbAccess.Location = new System.Drawing.Point(1, 78);
             this.cmbAccess.Name = "cmbAccess";
-            this.cmbAccess.Size = new System.Drawing.Size(232, 34);
+            this.cmbAccess.Size = new System.Drawing.Size(260, 34);
             this.cmbAccess.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(239, 81);
+            this.label3.Location = new System.Drawing.Point(267, 81);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 26);
             this.label3.TabIndex = 2;
@@ -323,7 +354,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(239, 42);
+            this.label2.Location = new System.Drawing.Point(267, 42);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 26);
             this.label2.TabIndex = 2;
@@ -333,7 +364,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(239, 4);
+            this.label1.Location = new System.Drawing.Point(267, 4);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 26);
             this.label1.TabIndex = 2;
@@ -347,10 +378,11 @@
             this.txtPassword.Border.Class = "TextBoxBorder";
             this.txtPassword.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtPassword.DisabledBackColor = System.Drawing.Color.White;
+            this.txtPassword.FocusHighlightEnabled = true;
             this.txtPassword.Location = new System.Drawing.Point(1, 40);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PreventEnterBeep = true;
-            this.txtPassword.Size = new System.Drawing.Size(232, 32);
+            this.txtPassword.Size = new System.Drawing.Size(260, 32);
             this.txtPassword.TabIndex = 1;
             // 
             // txtUserName
@@ -361,50 +393,24 @@
             this.txtUserName.Border.Class = "TextBoxBorder";
             this.txtUserName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtUserName.DisabledBackColor = System.Drawing.Color.White;
+            this.txtUserName.FocusHighlightEnabled = true;
             this.txtUserName.Location = new System.Drawing.Point(1, 2);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.PreventEnterBeep = true;
-            this.txtUserName.Size = new System.Drawing.Size(232, 32);
+            this.txtUserName.Size = new System.Drawing.Size(260, 32);
             this.txtUserName.TabIndex = 0;
-            // 
-            // ID
-            // 
-            this.ID.DataPropertyName = "ID";
-            this.ID.HeaderText = "ردیف";
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            this.ID.Width = 50;
-            // 
-            // UserName
-            // 
-            this.UserName.DataPropertyName = "UserName";
-            this.UserName.HeaderText = "نام کاربری";
-            this.UserName.Name = "UserName";
-            this.UserName.ReadOnly = true;
-            // 
-            // Password
-            // 
-            this.Password.DataPropertyName = "Password";
-            this.Password.HeaderText = "کلمه عبور";
-            this.Password.Name = "Password";
-            this.Password.ReadOnly = true;
-            // 
-            // Access
-            // 
-            this.Access.DataPropertyName = "Access";
-            this.Access.HeaderText = "سطح دسترسی";
-            this.Access.Name = "Access";
-            this.Access.ReadOnly = true;
-            this.Access.Width = 130;
             // 
             // frmUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(348, 378);
+            this.ClientSize = new System.Drawing.Size(382, 378);
             this.Controls.Add(this.groupPanel1);
             this.DoubleBuffered = true;
+            this.EnableGlass = false;
             this.Font = new System.Drawing.Font("IRANSans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.MaximizeBox = false;
             this.Name = "frmUsers";

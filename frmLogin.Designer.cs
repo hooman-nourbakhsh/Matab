@@ -226,6 +226,8 @@
             this.txtPassword.Border.Class = "TextBoxBorder";
             this.txtPassword.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtPassword.DisabledBackColor = System.Drawing.Color.White;
+            this.txtPassword.FocusHighlightColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtPassword.FocusHighlightEnabled = true;
             this.txtPassword.Location = new System.Drawing.Point(279, 86);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PreventEnterBeep = true;
@@ -240,6 +242,8 @@
             this.txtUserName.Border.Class = "TextBoxBorder";
             this.txtUserName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtUserName.DisabledBackColor = System.Drawing.Color.White;
+            this.txtUserName.FocusHighlightColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtUserName.FocusHighlightEnabled = true;
             this.txtUserName.Location = new System.Drawing.Point(279, 48);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.PreventEnterBeep = true;

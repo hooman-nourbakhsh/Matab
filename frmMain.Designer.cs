@@ -29,21 +29,25 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.expandablePanel1 = new DevComponents.DotNetBar.ExpandablePanel();
+            this.vistaClock1 = new VistaClockPersian.Controls.VistaClock();
+            this.lblUser = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupPanel4 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.btnHoghogh = new DevComponents.DotNetBar.ButtonX();
             this.btnMonshi = new DevComponents.DotNetBar.ButtonX();
             this.btnSetting = new DevComponents.DotNetBar.ButtonX();
             this.btnUsers = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.lblDay = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblUser = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.groupPanel1.SuspendLayout();
             this.expandablePanel1.SuspendLayout();
             this.groupPanel4.SuspendLayout();
@@ -98,13 +102,14 @@
             // 
             this.expandablePanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.expandablePanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.expandablePanel1.Controls.Add(this.vistaClock1);
             this.expandablePanel1.Controls.Add(this.lblUser);
             this.expandablePanel1.Controls.Add(this.label2);
             this.expandablePanel1.DisabledBackColor = System.Drawing.Color.Empty;
             this.expandablePanel1.HideControlsWhenCollapsed = true;
-            this.expandablePanel1.Location = new System.Drawing.Point(821, 109);
+            this.expandablePanel1.Location = new System.Drawing.Point(821, 113);
             this.expandablePanel1.Name = "expandablePanel1";
-            this.expandablePanel1.Size = new System.Drawing.Size(234, 355);
+            this.expandablePanel1.Size = new System.Drawing.Size(234, 351);
             this.expandablePanel1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.expandablePanel1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.expandablePanel1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -119,6 +124,41 @@
             this.expandablePanel1.TitleStyle.GradientAngle = 90;
             this.expandablePanel1.TitleText = "Title Bar";
             // 
+            // vistaClock1
+            // 
+            this.vistaClock1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.vistaClock1.BackColor = System.Drawing.Color.Transparent;
+            this.vistaClock1.Location = new System.Drawing.Point(52, 219);
+            this.vistaClock1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.vistaClock1.MaximumSize = new System.Drawing.Size(130, 130);
+            this.vistaClock1.MinimumSize = new System.Drawing.Size(130, 130);
+            this.vistaClock1.Name = "vistaClock1";
+            this.vistaClock1.SecondSpring = true;
+            this.vistaClock1.ShowSecond = true;
+            this.vistaClock1.Size = new System.Drawing.Size(130, 130);
+            this.vistaClock1.Style = VistaClockPersian.Controls.VistaClock.VistaClockStyle.Black;
+            this.vistaClock1.TabIndex = 7;
+            // 
+            // lblUser
+            // 
+            this.lblUser.AutoSize = true;
+            this.lblUser.BackColor = System.Drawing.Color.Transparent;
+            this.lblUser.Location = new System.Drawing.Point(61, 40);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(89, 26);
+            this.lblUser.TabIndex = 4;
+            this.lblUser.Text = "-----------";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Location = new System.Drawing.Point(148, 40);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(81, 26);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "کاربر فعال : ";
+            // 
             // groupPanel4
             // 
             this.groupPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -130,7 +170,7 @@
             this.groupPanel4.Controls.Add(this.btnUsers);
             this.groupPanel4.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupPanel4.Location = new System.Drawing.Point(0, 38);
+            this.groupPanel4.Location = new System.Drawing.Point(0, 42);
             this.groupPanel4.Name = "groupPanel4";
             this.groupPanel4.Size = new System.Drawing.Size(1061, 65);
             // 
@@ -181,6 +221,7 @@
             this.btnMonshi.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnMonshi.BackColor = System.Drawing.Color.Transparent;
             this.btnMonshi.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMonshi.Image = global::Matab.Properties.Resources.icons8_technical_support_40;
             this.btnMonshi.Location = new System.Drawing.Point(697, 2);
             this.btnMonshi.Name = "btnMonshi";
             this.btnMonshi.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
@@ -188,12 +229,14 @@
             this.btnMonshi.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnMonshi.TabIndex = 0;
             this.btnMonshi.Text = "منشی";
+            this.btnMonshi.Click += new System.EventHandler(this.btnMonshi_Click);
             // 
             // btnSetting
             // 
             this.btnSetting.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnSetting.BackColor = System.Drawing.Color.Transparent;
             this.btnSetting.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSetting.Image = global::Matab.Properties.Resources.icons8_gears_40;
             this.btnSetting.Location = new System.Drawing.Point(817, 2);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
@@ -201,12 +244,14 @@
             this.btnSetting.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnSetting.TabIndex = 0;
             this.btnSetting.Text = "تنظیمات";
+            this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
             // 
             // btnUsers
             // 
             this.btnUsers.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnUsers.BackColor = System.Drawing.Color.Transparent;
             this.btnUsers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUsers.Image = global::Matab.Properties.Resources.icons8_add_user_group_woman_man_40;
             this.btnUsers.Location = new System.Drawing.Point(937, 2);
             this.btnUsers.Name = "btnUsers";
             this.btnUsers.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
@@ -221,7 +266,9 @@
             this.groupPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.groupPanel3.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel3.Controls.Add(this.label3);
+            this.groupPanel3.Controls.Add(this.lblDay);
+            this.groupPanel3.Controls.Add(this.label5);
+            this.groupPanel3.Controls.Add(this.lblDate);
             this.groupPanel3.Controls.Add(this.label4);
             this.groupPanel3.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -258,6 +305,46 @@
             this.groupPanel3.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel3.TabIndex = 1;
             // 
+            // lblDay
+            // 
+            this.lblDay.AutoSize = true;
+            this.lblDay.BackColor = System.Drawing.Color.Transparent;
+            this.lblDay.Location = new System.Drawing.Point(777, 5);
+            this.lblDay.Name = "lblDay";
+            this.lblDay.Size = new System.Drawing.Size(40, 26);
+            this.lblDay.TabIndex = 7;
+            this.lblDay.Text = "----";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Location = new System.Drawing.Point(830, 5);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(43, 26);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "روز : ";
+            // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.BackColor = System.Drawing.Color.Transparent;
+            this.lblDate.Location = new System.Drawing.Point(928, 5);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(76, 26);
+            this.lblDate.TabIndex = 5;
+            this.lblDate.Text = "----/--/--";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Location = new System.Drawing.Point(1001, 5);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(56, 26);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "تاریخ : ";
+            // 
             // groupPanel2
             // 
             this.groupPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -268,7 +355,7 @@
             this.groupPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupPanel2.Location = new System.Drawing.Point(0, 0);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(1061, 38);
+            this.groupPanel2.Size = new System.Drawing.Size(1061, 42);
             // 
             // 
             // 
@@ -307,7 +394,7 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1055, 32);
+            this.label1.Size = new System.Drawing.Size(1055, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "سیستم نوبت دهی مطب";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -316,46 +403,6 @@
             // 
             this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2010Blue;
             this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48))))), System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204))))));
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(148, 40);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 26);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "کاربر فعال : ";
-            // 
-            // lblUser
-            // 
-            this.lblUser.AutoSize = true;
-            this.lblUser.BackColor = System.Drawing.Color.Transparent;
-            this.lblUser.Location = new System.Drawing.Point(61, 40);
-            this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(89, 26);
-            this.lblUser.TabIndex = 4;
-            this.lblUser.Text = "-----------";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(919, 4);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 26);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "----/--/--";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(1001, 4);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 26);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "تاریخ : ";
             // 
             // frmMain
             // 
@@ -366,6 +413,7 @@
             this.DoubleBuffered = true;
             this.EnableGlass = false;
             this.Font = new System.Drawing.Font("IRANSans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
             this.MaximizeBox = false;
             this.Name = "frmMain";
@@ -398,7 +446,10 @@
         private DevComponents.DotNetBar.ButtonX btnSetting;
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblDay;
+        private System.Windows.Forms.Label label5;
+        private VistaClockPersian.Controls.VistaClock vistaClock1;
     }
 }
