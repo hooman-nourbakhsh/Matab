@@ -36,10 +36,6 @@
             this.lblUser = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupPanel4 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.btnHoghogh = new DevComponents.DotNetBar.ButtonX();
-            this.btnMonshi = new DevComponents.DotNetBar.ButtonX();
-            this.btnSetting = new DevComponents.DotNetBar.ButtonX();
-            this.btnUsers = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.lblDay = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -48,6 +44,11 @@
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
+            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
+            this.btnHoghogh = new DevComponents.DotNetBar.ButtonX();
+            this.btnMonshi = new DevComponents.DotNetBar.ButtonX();
+            this.btnSetting = new DevComponents.DotNetBar.ButtonX();
+            this.btnUsers = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel1.SuspendLayout();
             this.expandablePanel1.SuspendLayout();
             this.groupPanel4.SuspendLayout();
@@ -164,6 +165,7 @@
             this.groupPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.groupPanel4.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel4.Controls.Add(this.buttonX1);
             this.groupPanel4.Controls.Add(this.btnHoghogh);
             this.groupPanel4.Controls.Add(this.btnMonshi);
             this.groupPanel4.Controls.Add(this.btnSetting);
@@ -202,64 +204,6 @@
             // 
             this.groupPanel4.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel4.TabIndex = 2;
-            // 
-            // btnHoghogh
-            // 
-            this.btnHoghogh.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnHoghogh.BackColor = System.Drawing.Color.Transparent;
-            this.btnHoghogh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHoghogh.Location = new System.Drawing.Point(577, 2);
-            this.btnHoghogh.Name = "btnHoghogh";
-            this.btnHoghogh.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
-            this.btnHoghogh.Size = new System.Drawing.Size(115, 55);
-            this.btnHoghogh.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnHoghogh.TabIndex = 0;
-            this.btnHoghogh.Text = "پرداخت حقوق";
-            // 
-            // btnMonshi
-            // 
-            this.btnMonshi.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnMonshi.BackColor = System.Drawing.Color.Transparent;
-            this.btnMonshi.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMonshi.Image = global::Matab.Properties.Resources.icons8_technical_support_40;
-            this.btnMonshi.Location = new System.Drawing.Point(697, 2);
-            this.btnMonshi.Name = "btnMonshi";
-            this.btnMonshi.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
-            this.btnMonshi.Size = new System.Drawing.Size(115, 55);
-            this.btnMonshi.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnMonshi.TabIndex = 0;
-            this.btnMonshi.Text = "منشی";
-            this.btnMonshi.Click += new System.EventHandler(this.btnMonshi_Click);
-            // 
-            // btnSetting
-            // 
-            this.btnSetting.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnSetting.BackColor = System.Drawing.Color.Transparent;
-            this.btnSetting.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSetting.Image = global::Matab.Properties.Resources.icons8_gears_40;
-            this.btnSetting.Location = new System.Drawing.Point(817, 2);
-            this.btnSetting.Name = "btnSetting";
-            this.btnSetting.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
-            this.btnSetting.Size = new System.Drawing.Size(115, 55);
-            this.btnSetting.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnSetting.TabIndex = 0;
-            this.btnSetting.Text = "تنظیمات";
-            this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
-            // 
-            // btnUsers
-            // 
-            this.btnUsers.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnUsers.BackColor = System.Drawing.Color.Transparent;
-            this.btnUsers.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUsers.Image = global::Matab.Properties.Resources.icons8_add_user_group_woman_man_40;
-            this.btnUsers.Location = new System.Drawing.Point(937, 2);
-            this.btnUsers.Name = "btnUsers";
-            this.btnUsers.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
-            this.btnUsers.Size = new System.Drawing.Size(115, 55);
-            this.btnUsers.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnUsers.TabIndex = 0;
-            this.btnUsers.Text = "کاربر";
-            this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
             // 
             // groupPanel3
             // 
@@ -404,6 +348,81 @@
             this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2010Blue;
             this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48))))), System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204))))));
             // 
+            // buttonX1
+            // 
+            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX1.BackColor = System.Drawing.Color.Transparent;
+            this.buttonX1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonX1.Image = global::Matab.Properties.Resources.icons8_purchase_order_40;
+            this.buttonX1.Location = new System.Drawing.Point(455, 2);
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
+            this.buttonX1.Size = new System.Drawing.Size(115, 55);
+            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX1.TabIndex = 1;
+            this.buttonX1.Text = "لیست پرداخت ها";
+            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
+            // 
+            // btnHoghogh
+            // 
+            this.btnHoghogh.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnHoghogh.BackColor = System.Drawing.Color.Transparent;
+            this.btnHoghogh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHoghogh.Image = global::Matab.Properties.Resources.icons8_payment_history_40;
+            this.btnHoghogh.Location = new System.Drawing.Point(576, 2);
+            this.btnHoghogh.Name = "btnHoghogh";
+            this.btnHoghogh.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
+            this.btnHoghogh.Size = new System.Drawing.Size(115, 55);
+            this.btnHoghogh.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnHoghogh.TabIndex = 0;
+            this.btnHoghogh.Text = "پرداخت حقوق";
+            this.btnHoghogh.Click += new System.EventHandler(this.btnHoghogh_Click);
+            // 
+            // btnMonshi
+            // 
+            this.btnMonshi.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnMonshi.BackColor = System.Drawing.Color.Transparent;
+            this.btnMonshi.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMonshi.Image = global::Matab.Properties.Resources.icons8_technical_support_40;
+            this.btnMonshi.Location = new System.Drawing.Point(697, 2);
+            this.btnMonshi.Name = "btnMonshi";
+            this.btnMonshi.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
+            this.btnMonshi.Size = new System.Drawing.Size(115, 55);
+            this.btnMonshi.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnMonshi.TabIndex = 0;
+            this.btnMonshi.Text = "منشی";
+            this.btnMonshi.Click += new System.EventHandler(this.btnMonshi_Click);
+            // 
+            // btnSetting
+            // 
+            this.btnSetting.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnSetting.BackColor = System.Drawing.Color.Transparent;
+            this.btnSetting.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSetting.Image = global::Matab.Properties.Resources.icons8_gears_40;
+            this.btnSetting.Location = new System.Drawing.Point(817, 2);
+            this.btnSetting.Name = "btnSetting";
+            this.btnSetting.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
+            this.btnSetting.Size = new System.Drawing.Size(115, 55);
+            this.btnSetting.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnSetting.TabIndex = 0;
+            this.btnSetting.Text = "تنظیمات";
+            this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
+            // 
+            // btnUsers
+            // 
+            this.btnUsers.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnUsers.BackColor = System.Drawing.Color.Transparent;
+            this.btnUsers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUsers.Image = global::Matab.Properties.Resources.icons8_add_user_group_woman_man_40;
+            this.btnUsers.Location = new System.Drawing.Point(937, 2);
+            this.btnUsers.Name = "btnUsers";
+            this.btnUsers.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
+            this.btnUsers.Size = new System.Drawing.Size(115, 55);
+            this.btnUsers.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnUsers.TabIndex = 0;
+            this.btnUsers.Text = "کاربر";
+            this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 26F);
@@ -451,5 +470,6 @@
         private System.Windows.Forms.Label lblDay;
         private System.Windows.Forms.Label label5;
         private VistaClockPersian.Controls.VistaClock vistaClock1;
+        private DevComponents.DotNetBar.ButtonX buttonX1;
     }
 }

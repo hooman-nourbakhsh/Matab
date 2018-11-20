@@ -73,5 +73,15 @@ namespace Matab
         {
             new frmMonshi().ShowDialog();
         }
+
+        private void btnHoghogh_Click(object sender, EventArgs e)
+        {
+            new frmListMonshi().ShowDialog();
+        }
+
+        private void buttonX1_Click(object sender, EventArgs e)
+        {
+            new frmListPardakht().ShowDialog();
+        }
     }
 }

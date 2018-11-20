@@ -73,6 +73,16 @@ namespace Matab.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_cash_register_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-cash-register-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_edit_file_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-edit-file-32", resourceCulture);
@@ -106,6 +116,36 @@ namespace Matab.Properties {
         internal static System.Drawing.Bitmap icons8_logout_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-logout-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_payment_history_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-payment-history-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_print_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-print-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_purchase_order_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-purchase-order-40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

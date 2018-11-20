@@ -11,6 +11,7 @@ namespace Matab
         public frmMonshi()
         {
             InitializeComponent();
+       
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -106,6 +107,12 @@ namespace Matab
                 MessageBox.Show("در هنگام اتصال به بانک اطلاعاتی خطایی رخ داده است ، مجددا تلاش کنید", "Matab", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             query.CloseConnection();
+        }
+
+        private void frmMonshi_Load(object sender, EventArgs e)
+        {
+            System.Globalization.PersianCalendar P = new System.Globalization.PersianCalendar();
+            mskTarikh.Text = P.GetYear(DateTime.Now).ToString() + P.GetMonth(DateTime.Now).ToString("0#") + P.GetDayOfMonth(DateTime.Now).ToString("0#");
         }
     }
 }

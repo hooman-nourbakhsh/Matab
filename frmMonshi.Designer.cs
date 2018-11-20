@@ -32,8 +32,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMonshi));
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.btnEdit = new DevComponents.DotNetBar.ButtonX();
+            this.btnDelete = new DevComponents.DotNetBar.ButtonX();
+            this.btnSave = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.mskTarikh = new DevComponents.DotNetBar.Controls.MaskedTextBoxAdv();
+            this.btnSearch = new DevComponents.DotNetBar.ButtonX();
             this.txtTozihat = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtTel = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtLName = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -47,10 +51,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.btnEdit = new DevComponents.DotNetBar.ButtonX();
-            this.btnDelete = new DevComponents.DotNetBar.ButtonX();
-            this.btnSave = new DevComponents.DotNetBar.ButtonX();
-            this.btnSearch = new DevComponents.DotNetBar.ButtonX();
             this.txtHoghogh = new DevComponents.Editors.IntegerInput();
             this.groupPanel1.SuspendLayout();
             this.groupPanel3.SuspendLayout();
@@ -69,7 +69,7 @@
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel1.Location = new System.Drawing.Point(0, 0);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(442, 407);
+            this.groupPanel1.Size = new System.Drawing.Size(447, 407);
             // 
             // 
             // 
@@ -112,7 +112,7 @@
             this.groupPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupPanel3.Location = new System.Drawing.Point(0, 355);
             this.groupPanel3.Name = "groupPanel3";
-            this.groupPanel3.Size = new System.Drawing.Size(436, 46);
+            this.groupPanel3.Size = new System.Drawing.Size(441, 46);
             // 
             // 
             // 
@@ -143,6 +143,51 @@
             this.groupPanel3.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel3.TabIndex = 1;
             // 
+            // btnEdit
+            // 
+            this.btnEdit.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnEdit.BackColor = System.Drawing.Color.Transparent;
+            this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEdit.Image = global::Matab.Properties.Resources.icons8_edit_file_32;
+            this.btnEdit.Location = new System.Drawing.Point(13, 1);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
+            this.btnEdit.Size = new System.Drawing.Size(131, 38);
+            this.btnEdit.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnEdit.TabIndex = 2;
+            this.btnEdit.Text = "ویرایش";
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnDelete.BackColor = System.Drawing.Color.Transparent;
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDelete.Image = global::Matab.Properties.Resources.icons8_trash_32;
+            this.btnDelete.Location = new System.Drawing.Point(152, 1);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
+            this.btnDelete.Size = new System.Drawing.Size(131, 38);
+            this.btnDelete.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnDelete.TabIndex = 1;
+            this.btnDelete.Text = "حذف";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnSave.BackColor = System.Drawing.Color.Transparent;
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSave.Image = global::Matab.Properties.Resources.icons8_save_32;
+            this.btnSave.Location = new System.Drawing.Point(291, 1);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
+            this.btnSave.Size = new System.Drawing.Size(131, 38);
+            this.btnSave.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnSave.TabIndex = 0;
+            this.btnSave.Text = "ذخیره";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // groupPanel2
             // 
             this.groupPanel2.CanvasColor = System.Drawing.SystemColors.Control;
@@ -166,7 +211,7 @@
             this.groupPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupPanel2.Location = new System.Drawing.Point(0, 0);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(436, 353);
+            this.groupPanel2.Size = new System.Drawing.Size(441, 353);
             // 
             // 
             // 
@@ -207,13 +252,28 @@
             this.mskTarikh.ButtonClear.SymbolColor = System.Drawing.Color.Red;
             this.mskTarikh.ButtonClear.Visible = true;
             this.mskTarikh.FocusHighlightEnabled = true;
-            this.mskTarikh.Location = new System.Drawing.Point(1, 199);
+            this.mskTarikh.Location = new System.Drawing.Point(0, 195);
             this.mskTarikh.Mask = "####/##/##";
             this.mskTarikh.Name = "mskTarikh";
             this.mskTarikh.Size = new System.Drawing.Size(299, 31);
             this.mskTarikh.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.mskTarikh.TabIndex = 6;
             this.mskTarikh.Text = "";
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
+            this.btnSearch.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat;
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
+            this.btnSearch.Location = new System.Drawing.Point(1, 3);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(35, 32);
+            this.btnSearch.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnSearch.TabIndex = 1;
+            this.btnSearch.Tooltip = "<b><font color=\"#0072BC\" size=\"12\" >جستجو</font></b>";
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // txtTozihat
             // 
@@ -223,7 +283,7 @@
             this.txtTozihat.Border.Class = "TextBoxBorder";
             this.txtTozihat.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtTozihat.FocusHighlightEnabled = true;
-            this.txtTozihat.Location = new System.Drawing.Point(1, 236);
+            this.txtTozihat.Location = new System.Drawing.Point(1, 232);
             this.txtTozihat.Multiline = true;
             this.txtTozihat.Name = "txtTozihat";
             this.txtTozihat.PreventEnterBeep = true;
@@ -291,7 +351,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Location = new System.Drawing.Point(306, 200);
+            this.label7.Location = new System.Drawing.Point(306, 197);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(130, 26);
             this.label7.TabIndex = 0;
@@ -301,7 +361,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(306, 238);
+            this.label6.Location = new System.Drawing.Point(306, 234);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(68, 26);
             this.label6.TabIndex = 0;
@@ -311,7 +371,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(306, 161);
+            this.label5.Location = new System.Drawing.Point(306, 160);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(110, 26);
             this.label5.TabIndex = 0;
@@ -361,66 +421,6 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // btnEdit
-            // 
-            this.btnEdit.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnEdit.BackColor = System.Drawing.Color.Transparent;
-            this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEdit.Image = global::Matab.Properties.Resources.icons8_edit_file_32;
-            this.btnEdit.Location = new System.Drawing.Point(11, 1);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
-            this.btnEdit.Size = new System.Drawing.Size(131, 38);
-            this.btnEdit.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnEdit.TabIndex = 2;
-            this.btnEdit.Text = "ویرایش";
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnDelete.BackColor = System.Drawing.Color.Transparent;
-            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDelete.Image = global::Matab.Properties.Resources.icons8_trash_32;
-            this.btnDelete.Location = new System.Drawing.Point(150, 1);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
-            this.btnDelete.Size = new System.Drawing.Size(131, 38);
-            this.btnDelete.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnDelete.TabIndex = 1;
-            this.btnDelete.Text = "حذف";
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
-            // btnSave
-            // 
-            this.btnSave.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnSave.BackColor = System.Drawing.Color.Transparent;
-            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.Image = global::Matab.Properties.Resources.icons8_save_32;
-            this.btnSave.Location = new System.Drawing.Point(289, 1);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
-            this.btnSave.Size = new System.Drawing.Size(131, 38);
-            this.btnSave.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnSave.TabIndex = 0;
-            this.btnSave.Text = "ذخیره";
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
-            this.btnSearch.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat;
-            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
-            this.btnSearch.Location = new System.Drawing.Point(1, 3);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(35, 32);
-            this.btnSearch.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnSearch.TabIndex = 1;
-            this.btnSearch.Tooltip = "<b><font color=\"#0072BC\" size=\"12\" >جستجو</font></b>";
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
             // txtHoghogh
             // 
             // 
@@ -428,10 +428,9 @@
             // 
             this.txtHoghogh.BackgroundStyle.Class = "DateTimeInputBackground";
             this.txtHoghogh.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtHoghogh.ButtonClear.SymbolColor = System.Drawing.Color.Red;
             this.txtHoghogh.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.txtHoghogh.FocusHighlightEnabled = true;
-            this.txtHoghogh.Location = new System.Drawing.Point(1, 158);
+            this.txtHoghogh.DisplayFormat = "N0";
+            this.txtHoghogh.Location = new System.Drawing.Point(1, 160);
             this.txtHoghogh.MinValue = 0;
             this.txtHoghogh.Name = "txtHoghogh";
             this.txtHoghogh.Size = new System.Drawing.Size(299, 32);
@@ -441,7 +440,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(442, 407);
+            this.ClientSize = new System.Drawing.Size(447, 407);
             this.Controls.Add(this.groupPanel1);
             this.DoubleBuffered = true;
             this.EnableGlass = false;
@@ -454,6 +453,7 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "تعریف منشی";
+            this.Load += new System.EventHandler(this.frmMonshi_Load);
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel3.ResumeLayout(false);
             this.groupPanel2.ResumeLayout(false);

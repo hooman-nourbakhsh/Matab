@@ -36,6 +36,26 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevComponents.DotNetBar2, Version=12.8.0.6, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Base, Version=2015.1.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\DLLs\Stimulsoft.Reports.NET.v2015\DLL\Stimulsoft.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls, Version=2015.1.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\DLLs\Stimulsoft.Reports.NET.v2015\DLL\Stimulsoft.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls.Win, Version=2015.1.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\DLLs\Stimulsoft.Reports.NET.v2015\DLL\Stimulsoft.Controls.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2015.1.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\DLLs\Stimulsoft.Reports.NET.v2015\DLL\Stimulsoft.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Win, Version=2015.1.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\DLLs\Stimulsoft.Reports.NET.v2015\DLL\Stimulsoft.Report.Win.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -55,6 +75,18 @@
     <Compile Include="Class_ClearControls.cs" />
     <Compile Include="clc_variable.cs" />
     <Compile Include="Connection_Query.cs" />
+    <Compile Include="frmListMonshi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListMonshi.Designer.cs">
+      <DependentUpon>frmListMonshi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListPardakht.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListPardakht.Designer.cs">
+      <DependentUpon>frmListPardakht.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +119,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmListMonshi.resx">
+      <DependentUpon>frmListMonshi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListPardakht.resx">
+      <DependentUpon>frmListPardakht.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,6 +186,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icons_clinic.ico" />
+    <None Include="Resources\icons8-purchase-order-40.png" />
+    <None Include="Resources\icons8-payment-history-40.png" />
+    <None Include="Resources\icons8-print-32.png" />
+    <None Include="Resources\icons8-cash-register-32.png" />
     <None Include="Resources\icons8-technical-support-40.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
