@@ -173,6 +173,26 @@ namespace Matab.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_test_passed_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-test-passed-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_timesheet_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-timesheet-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_trash_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-trash-32", resourceCulture);

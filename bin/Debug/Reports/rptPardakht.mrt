@@ -215,7 +215,7 @@
               <VertAlignment>Center</VertAlignment>
             </Text10>
             <Text11 Ref="16" type="Text" isKey="true">
-              <Brush>[128:128:255]</Brush>
+              <Brush>[255:255:192]</Brush>
               <ClientRectangle>0.1,0.83,2,0.3</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>IRANSans,11</Font>

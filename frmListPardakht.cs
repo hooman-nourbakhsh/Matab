@@ -1,12 +1,5 @@
 ﻿using Connection_Class;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Stimulsoft.Report;
 
@@ -61,6 +54,22 @@ namespace Matab
             report["strAzTarikh"] = mskAzTarikh.Text;
             report["strTaTarikh"] = mskTaTarikh.Text;
             report.ShowWithRibbonGUI();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            query.OpenConection();
+            try
+            {
+                int x = Convert.ToInt32(dgvListPardakht.SelectedCells[0].Value);
+                query.ExecuteQueries("delete from tblPardakht where ID=" + x);
+                MessageBox.Show("عملیات با موفقیت انجام شد", "Matab", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("در هنگام اتصال به بانک اطلاعاتی خطایی رخ داده است ، مجددا تلاش کنید", "Matab", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            query.CloseConnection();
         }
     }
 }

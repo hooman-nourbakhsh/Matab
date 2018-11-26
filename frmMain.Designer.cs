@@ -44,7 +44,9 @@
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
-            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
+            this.btnNobat = new DevComponents.DotNetBar.ButtonX();
+            this.btnListNobat = new DevComponents.DotNetBar.ButtonX();
+            this.btnListPardakht = new DevComponents.DotNetBar.ButtonX();
             this.btnHoghogh = new DevComponents.DotNetBar.ButtonX();
             this.btnMonshi = new DevComponents.DotNetBar.ButtonX();
             this.btnSetting = new DevComponents.DotNetBar.ButtonX();
@@ -165,7 +167,9 @@
             this.groupPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.groupPanel4.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel4.Controls.Add(this.buttonX1);
+            this.groupPanel4.Controls.Add(this.btnNobat);
+            this.groupPanel4.Controls.Add(this.btnListNobat);
+            this.groupPanel4.Controls.Add(this.btnListPardakht);
             this.groupPanel4.Controls.Add(this.btnHoghogh);
             this.groupPanel4.Controls.Add(this.btnMonshi);
             this.groupPanel4.Controls.Add(this.btnSetting);
@@ -203,7 +207,7 @@
             // 
             // 
             this.groupPanel4.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel4.TabIndex = 2;
+            this.groupPanel4.TabIndex = 0;
             // 
             // groupPanel3
             // 
@@ -348,20 +352,50 @@
             this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2010Blue;
             this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48))))), System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204))))));
             // 
-            // buttonX1
+            // btnNobat
             // 
-            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX1.BackColor = System.Drawing.Color.Transparent;
-            this.buttonX1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonX1.Image = global::Matab.Properties.Resources.icons8_purchase_order_40;
-            this.buttonX1.Location = new System.Drawing.Point(455, 2);
-            this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
-            this.buttonX1.Size = new System.Drawing.Size(115, 55);
-            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX1.TabIndex = 1;
-            this.buttonX1.Text = "لیست پرداخت ها";
-            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
+            this.btnNobat.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnNobat.BackColor = System.Drawing.Color.Transparent;
+            this.btnNobat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNobat.Image = global::Matab.Properties.Resources.icons8_timesheet_40;
+            this.btnNobat.Location = new System.Drawing.Point(334, 2);
+            this.btnNobat.Name = "btnNobat";
+            this.btnNobat.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
+            this.btnNobat.Size = new System.Drawing.Size(115, 55);
+            this.btnNobat.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnNobat.TabIndex = 5;
+            this.btnNobat.Text = "رزرو وقت";
+            this.btnNobat.Click += new System.EventHandler(this.btnNobat_Click);
+            // 
+            // btnListNobat
+            // 
+            this.btnListNobat.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnListNobat.BackColor = System.Drawing.Color.Transparent;
+            this.btnListNobat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnListNobat.Image = global::Matab.Properties.Resources.icons8_test_passed_40;
+            this.btnListNobat.Location = new System.Drawing.Point(213, 2);
+            this.btnListNobat.Name = "btnListNobat";
+            this.btnListNobat.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
+            this.btnListNobat.Size = new System.Drawing.Size(115, 55);
+            this.btnListNobat.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnListNobat.TabIndex = 4;
+            this.btnListNobat.Text = "لیست رزرو ها";
+            this.btnListNobat.Click += new System.EventHandler(this.btnListNobat_Click);
+            // 
+            // btnListPardakht
+            // 
+            this.btnListPardakht.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnListPardakht.BackColor = System.Drawing.Color.Transparent;
+            this.btnListPardakht.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnListPardakht.Image = global::Matab.Properties.Resources.icons8_purchase_order_40;
+            this.btnListPardakht.Location = new System.Drawing.Point(455, 2);
+            this.btnListPardakht.Name = "btnListPardakht";
+            this.btnListPardakht.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
+            this.btnListPardakht.Size = new System.Drawing.Size(115, 55);
+            this.btnListPardakht.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnListPardakht.TabIndex = 4;
+            this.btnListPardakht.Text = "لیست پرداخت ها";
+            this.btnListPardakht.Click += new System.EventHandler(this.btnListPardakht_Click);
             // 
             // btnHoghogh
             // 
@@ -374,7 +408,7 @@
             this.btnHoghogh.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
             this.btnHoghogh.Size = new System.Drawing.Size(115, 55);
             this.btnHoghogh.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnHoghogh.TabIndex = 0;
+            this.btnHoghogh.TabIndex = 3;
             this.btnHoghogh.Text = "پرداخت حقوق";
             this.btnHoghogh.Click += new System.EventHandler(this.btnHoghogh_Click);
             // 
@@ -389,7 +423,7 @@
             this.btnMonshi.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
             this.btnMonshi.Size = new System.Drawing.Size(115, 55);
             this.btnMonshi.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnMonshi.TabIndex = 0;
+            this.btnMonshi.TabIndex = 2;
             this.btnMonshi.Text = "منشی";
             this.btnMonshi.Click += new System.EventHandler(this.btnMonshi_Click);
             // 
@@ -404,7 +438,7 @@
             this.btnSetting.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
             this.btnSetting.Size = new System.Drawing.Size(115, 55);
             this.btnSetting.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnSetting.TabIndex = 0;
+            this.btnSetting.TabIndex = 1;
             this.btnSetting.Text = "تنظیمات";
             this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
             // 
@@ -470,6 +504,8 @@
         private System.Windows.Forms.Label lblDay;
         private System.Windows.Forms.Label label5;
         private VistaClockPersian.Controls.VistaClock vistaClock1;
-        private DevComponents.DotNetBar.ButtonX buttonX1;
+        private DevComponents.DotNetBar.ButtonX btnListPardakht;
+        private DevComponents.DotNetBar.ButtonX btnNobat;
+        private DevComponents.DotNetBar.ButtonX btnListNobat;
     }
 }

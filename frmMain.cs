@@ -79,9 +79,19 @@ namespace Matab
             new frmListMonshi().ShowDialog();
         }
 
-        private void buttonX1_Click(object sender, EventArgs e)
+        private void btnListPardakht_Click(object sender, EventArgs e)
         {
             new frmListPardakht().ShowDialog();
+        }
+
+        private void btnNobat_Click(object sender, EventArgs e)
+        {
+            new frmNobat().ShowDialog();
+        }
+
+        private void btnListNobat_Click(object sender, EventArgs e)
+        {
+            new frmListNobat().ShowDialog();
         }
     }
 }
