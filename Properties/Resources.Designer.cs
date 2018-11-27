@@ -103,6 +103,26 @@ namespace Matab.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_ledger_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-ledger-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_list_view_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-list-view-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_login_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-login-32", resourceCulture);
@@ -163,6 +183,26 @@ namespace Matab.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_stethoscope_40_1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-stethoscope-40(1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_synchronize_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-synchronize-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_technical_support_40 {
             get {
                 object obj = ResourceManager.GetObject("icons8-technical-support-40", resourceCulture);
@@ -196,6 +236,16 @@ namespace Matab.Properties {
         internal static System.Drawing.Bitmap icons8_trash_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-trash-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_treatment_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-treatment-40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

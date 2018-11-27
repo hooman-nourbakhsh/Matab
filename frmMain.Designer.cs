@@ -44,7 +44,11 @@
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
+            this.btnListVisit = new DevComponents.DotNetBar.ButtonX();
+            this.btnVisit = new DevComponents.DotNetBar.ButtonX();
+            this.btnBimeh = new DevComponents.DotNetBar.ButtonX();
             this.btnNobat = new DevComponents.DotNetBar.ButtonX();
+            this.btnKhadamat = new DevComponents.DotNetBar.ButtonX();
             this.btnListNobat = new DevComponents.DotNetBar.ButtonX();
             this.btnListPardakht = new DevComponents.DotNetBar.ButtonX();
             this.btnHoghogh = new DevComponents.DotNetBar.ButtonX();
@@ -70,7 +74,7 @@
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel1.Location = new System.Drawing.Point(0, 0);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(1067, 519);
+            this.groupPanel1.Size = new System.Drawing.Size(981, 519);
             // 
             // 
             // 
@@ -110,9 +114,9 @@
             this.expandablePanel1.Controls.Add(this.label2);
             this.expandablePanel1.DisabledBackColor = System.Drawing.Color.Empty;
             this.expandablePanel1.HideControlsWhenCollapsed = true;
-            this.expandablePanel1.Location = new System.Drawing.Point(821, 113);
+            this.expandablePanel1.Location = new System.Drawing.Point(735, 178);
             this.expandablePanel1.Name = "expandablePanel1";
-            this.expandablePanel1.Size = new System.Drawing.Size(234, 351);
+            this.expandablePanel1.Size = new System.Drawing.Size(234, 286);
             this.expandablePanel1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.expandablePanel1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.expandablePanel1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -131,7 +135,7 @@
             // 
             this.vistaClock1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.vistaClock1.BackColor = System.Drawing.Color.Transparent;
-            this.vistaClock1.Location = new System.Drawing.Point(52, 219);
+            this.vistaClock1.Location = new System.Drawing.Point(52, 106);
             this.vistaClock1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.vistaClock1.MaximumSize = new System.Drawing.Size(130, 130);
             this.vistaClock1.MinimumSize = new System.Drawing.Size(130, 130);
@@ -167,7 +171,11 @@
             this.groupPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.groupPanel4.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel4.Controls.Add(this.btnListVisit);
+            this.groupPanel4.Controls.Add(this.btnVisit);
+            this.groupPanel4.Controls.Add(this.btnBimeh);
             this.groupPanel4.Controls.Add(this.btnNobat);
+            this.groupPanel4.Controls.Add(this.btnKhadamat);
             this.groupPanel4.Controls.Add(this.btnListNobat);
             this.groupPanel4.Controls.Add(this.btnListPardakht);
             this.groupPanel4.Controls.Add(this.btnHoghogh);
@@ -178,7 +186,7 @@
             this.groupPanel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupPanel4.Location = new System.Drawing.Point(0, 42);
             this.groupPanel4.Name = "groupPanel4";
-            this.groupPanel4.Size = new System.Drawing.Size(1061, 65);
+            this.groupPanel4.Size = new System.Drawing.Size(975, 125);
             // 
             // 
             // 
@@ -222,7 +230,7 @@
             this.groupPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupPanel3.Location = new System.Drawing.Point(0, 470);
             this.groupPanel3.Name = "groupPanel3";
-            this.groupPanel3.Size = new System.Drawing.Size(1061, 43);
+            this.groupPanel3.Size = new System.Drawing.Size(975, 43);
             // 
             // 
             // 
@@ -257,7 +265,7 @@
             // 
             this.lblDay.AutoSize = true;
             this.lblDay.BackColor = System.Drawing.Color.Transparent;
-            this.lblDay.Location = new System.Drawing.Point(777, 5);
+            this.lblDay.Location = new System.Drawing.Point(691, 5);
             this.lblDay.Name = "lblDay";
             this.lblDay.Size = new System.Drawing.Size(40, 26);
             this.lblDay.TabIndex = 7;
@@ -267,7 +275,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(830, 5);
+            this.label5.Location = new System.Drawing.Point(744, 5);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(43, 26);
             this.label5.TabIndex = 8;
@@ -277,7 +285,7 @@
             // 
             this.lblDate.AutoSize = true;
             this.lblDate.BackColor = System.Drawing.Color.Transparent;
-            this.lblDate.Location = new System.Drawing.Point(928, 5);
+            this.lblDate.Location = new System.Drawing.Point(842, 5);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(76, 26);
             this.lblDate.TabIndex = 5;
@@ -287,7 +295,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(1001, 5);
+            this.label4.Location = new System.Drawing.Point(915, 5);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(56, 26);
             this.label4.TabIndex = 6;
@@ -303,7 +311,7 @@
             this.groupPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupPanel2.Location = new System.Drawing.Point(0, 0);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(1061, 42);
+            this.groupPanel2.Size = new System.Drawing.Size(975, 42);
             // 
             // 
             // 
@@ -342,7 +350,7 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1055, 36);
+            this.label1.Size = new System.Drawing.Size(969, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "سیستم نوبت دهی مطب";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -352,13 +360,58 @@
             this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2010Blue;
             this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48))))), System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204))))));
             // 
+            // btnListVisit
+            // 
+            this.btnListVisit.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnListVisit.BackColor = System.Drawing.Color.Transparent;
+            this.btnListVisit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnListVisit.Image = global::Matab.Properties.Resources.icons8_list_view_40;
+            this.btnListVisit.Location = new System.Drawing.Point(609, 62);
+            this.btnListVisit.Name = "btnListVisit";
+            this.btnListVisit.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
+            this.btnListVisit.Size = new System.Drawing.Size(115, 55);
+            this.btnListVisit.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnListVisit.TabIndex = 8;
+            this.btnListVisit.Text = "لیست ویزیت";
+            this.btnListVisit.Click += new System.EventHandler(this.btnListVisit_Click);
+            // 
+            // btnVisit
+            // 
+            this.btnVisit.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnVisit.BackColor = System.Drawing.Color.Transparent;
+            this.btnVisit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVisit.Image = global::Matab.Properties.Resources.icons8_stethoscope_40_1_;
+            this.btnVisit.Location = new System.Drawing.Point(729, 62);
+            this.btnVisit.Name = "btnVisit";
+            this.btnVisit.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
+            this.btnVisit.Size = new System.Drawing.Size(115, 55);
+            this.btnVisit.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnVisit.TabIndex = 8;
+            this.btnVisit.Text = "ویزیت";
+            this.btnVisit.Click += new System.EventHandler(this.btnVisit_Click);
+            // 
+            // btnBimeh
+            // 
+            this.btnBimeh.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnBimeh.BackColor = System.Drawing.Color.Transparent;
+            this.btnBimeh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBimeh.Image = global::Matab.Properties.Resources.icons8_ledger_40;
+            this.btnBimeh.Location = new System.Drawing.Point(849, 62);
+            this.btnBimeh.Name = "btnBimeh";
+            this.btnBimeh.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
+            this.btnBimeh.Size = new System.Drawing.Size(115, 55);
+            this.btnBimeh.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnBimeh.TabIndex = 8;
+            this.btnBimeh.Text = "بیمه ها";
+            this.btnBimeh.Click += new System.EventHandler(this.btnBimeh_Click);
+            // 
             // btnNobat
             // 
             this.btnNobat.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnNobat.BackColor = System.Drawing.Color.Transparent;
             this.btnNobat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNobat.Image = global::Matab.Properties.Resources.icons8_timesheet_40;
-            this.btnNobat.Location = new System.Drawing.Point(334, 2);
+            this.btnNobat.Location = new System.Drawing.Point(246, 3);
             this.btnNobat.Name = "btnNobat";
             this.btnNobat.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
             this.btnNobat.Size = new System.Drawing.Size(115, 55);
@@ -367,18 +420,33 @@
             this.btnNobat.Text = "رزرو وقت";
             this.btnNobat.Click += new System.EventHandler(this.btnNobat_Click);
             // 
+            // btnKhadamat
+            // 
+            this.btnKhadamat.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnKhadamat.BackColor = System.Drawing.Color.Transparent;
+            this.btnKhadamat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnKhadamat.Image = global::Matab.Properties.Resources.icons8_treatment_40;
+            this.btnKhadamat.Location = new System.Drawing.Point(4, 3);
+            this.btnKhadamat.Name = "btnKhadamat";
+            this.btnKhadamat.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
+            this.btnKhadamat.Size = new System.Drawing.Size(115, 55);
+            this.btnKhadamat.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnKhadamat.TabIndex = 7;
+            this.btnKhadamat.Text = "خدمات";
+            this.btnKhadamat.Click += new System.EventHandler(this.btnKhadamat_Click);
+            // 
             // btnListNobat
             // 
             this.btnListNobat.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnListNobat.BackColor = System.Drawing.Color.Transparent;
             this.btnListNobat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnListNobat.Image = global::Matab.Properties.Resources.icons8_test_passed_40;
-            this.btnListNobat.Location = new System.Drawing.Point(213, 2);
+            this.btnListNobat.Location = new System.Drawing.Point(125, 3);
             this.btnListNobat.Name = "btnListNobat";
             this.btnListNobat.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
             this.btnListNobat.Size = new System.Drawing.Size(115, 55);
             this.btnListNobat.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnListNobat.TabIndex = 4;
+            this.btnListNobat.TabIndex = 6;
             this.btnListNobat.Text = "لیست رزرو ها";
             this.btnListNobat.Click += new System.EventHandler(this.btnListNobat_Click);
             // 
@@ -388,7 +456,7 @@
             this.btnListPardakht.BackColor = System.Drawing.Color.Transparent;
             this.btnListPardakht.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnListPardakht.Image = global::Matab.Properties.Resources.icons8_purchase_order_40;
-            this.btnListPardakht.Location = new System.Drawing.Point(455, 2);
+            this.btnListPardakht.Location = new System.Drawing.Point(367, 3);
             this.btnListPardakht.Name = "btnListPardakht";
             this.btnListPardakht.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
             this.btnListPardakht.Size = new System.Drawing.Size(115, 55);
@@ -403,7 +471,7 @@
             this.btnHoghogh.BackColor = System.Drawing.Color.Transparent;
             this.btnHoghogh.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHoghogh.Image = global::Matab.Properties.Resources.icons8_payment_history_40;
-            this.btnHoghogh.Location = new System.Drawing.Point(576, 2);
+            this.btnHoghogh.Location = new System.Drawing.Point(488, 3);
             this.btnHoghogh.Name = "btnHoghogh";
             this.btnHoghogh.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
             this.btnHoghogh.Size = new System.Drawing.Size(115, 55);
@@ -418,7 +486,7 @@
             this.btnMonshi.BackColor = System.Drawing.Color.Transparent;
             this.btnMonshi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMonshi.Image = global::Matab.Properties.Resources.icons8_technical_support_40;
-            this.btnMonshi.Location = new System.Drawing.Point(697, 2);
+            this.btnMonshi.Location = new System.Drawing.Point(609, 3);
             this.btnMonshi.Name = "btnMonshi";
             this.btnMonshi.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
             this.btnMonshi.Size = new System.Drawing.Size(115, 55);
@@ -433,7 +501,7 @@
             this.btnSetting.BackColor = System.Drawing.Color.Transparent;
             this.btnSetting.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSetting.Image = global::Matab.Properties.Resources.icons8_gears_40;
-            this.btnSetting.Location = new System.Drawing.Point(817, 2);
+            this.btnSetting.Location = new System.Drawing.Point(729, 1);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
             this.btnSetting.Size = new System.Drawing.Size(115, 55);
@@ -448,7 +516,7 @@
             this.btnUsers.BackColor = System.Drawing.Color.Transparent;
             this.btnUsers.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUsers.Image = global::Matab.Properties.Resources.icons8_add_user_group_woman_man_40;
-            this.btnUsers.Location = new System.Drawing.Point(937, 2);
+            this.btnUsers.Location = new System.Drawing.Point(849, 1);
             this.btnUsers.Name = "btnUsers";
             this.btnUsers.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
             this.btnUsers.Size = new System.Drawing.Size(115, 55);
@@ -461,7 +529,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 519);
+            this.ClientSize = new System.Drawing.Size(981, 519);
             this.Controls.Add(this.groupPanel1);
             this.DoubleBuffered = true;
             this.EnableGlass = false;
@@ -507,5 +575,9 @@
         private DevComponents.DotNetBar.ButtonX btnListPardakht;
         private DevComponents.DotNetBar.ButtonX btnNobat;
         private DevComponents.DotNetBar.ButtonX btnListNobat;
+        private DevComponents.DotNetBar.ButtonX btnKhadamat;
+        private DevComponents.DotNetBar.ButtonX btnBimeh;
+        private DevComponents.DotNetBar.ButtonX btnVisit;
+        private DevComponents.DotNetBar.ButtonX btnListVisit;
     }
 }

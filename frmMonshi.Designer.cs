@@ -36,6 +36,7 @@
             this.btnDelete = new DevComponents.DotNetBar.ButtonX();
             this.btnSave = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.txtHoghogh = new DevComponents.Editors.IntegerInput();
             this.mskTarikh = new DevComponents.DotNetBar.Controls.MaskedTextBoxAdv();
             this.btnSearch = new DevComponents.DotNetBar.ButtonX();
             this.txtTozihat = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -51,12 +52,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.txtHoghogh = new DevComponents.Editors.IntegerInput();
             this.groupPanel1.SuspendLayout();
             this.groupPanel3.SuspendLayout();
             this.groupPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHoghogh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupPanel1
@@ -242,6 +242,20 @@
             this.groupPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel2.TabIndex = 0;
             // 
+            // txtHoghogh
+            // 
+            // 
+            // 
+            // 
+            this.txtHoghogh.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.txtHoghogh.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtHoghogh.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.txtHoghogh.Location = new System.Drawing.Point(1, 160);
+            this.txtHoghogh.MinValue = 0;
+            this.txtHoghogh.Name = "txtHoghogh";
+            this.txtHoghogh.Size = new System.Drawing.Size(299, 32);
+            this.txtHoghogh.TabIndex = 8;
+            // 
             // mskTarikh
             // 
             // 
@@ -421,21 +435,6 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // txtHoghogh
-            // 
-            // 
-            // 
-            // 
-            this.txtHoghogh.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.txtHoghogh.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtHoghogh.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.txtHoghogh.DisplayFormat = "N0";
-            this.txtHoghogh.Location = new System.Drawing.Point(1, 160);
-            this.txtHoghogh.MinValue = 0;
-            this.txtHoghogh.Name = "txtHoghogh";
-            this.txtHoghogh.Size = new System.Drawing.Size(299, 32);
-            this.txtHoghogh.TabIndex = 8;
-            // 
             // frmMonshi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 26F);
@@ -458,8 +457,8 @@
             this.groupPanel3.ResumeLayout(false);
             this.groupPanel2.ResumeLayout(false);
             this.groupPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHoghogh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }

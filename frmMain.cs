@@ -93,5 +93,25 @@ namespace Matab
         {
             new frmListNobat().ShowDialog();
         }
+
+        private void btnKhadamat_Click(object sender, EventArgs e)
+        {
+            new frmKhadamat().ShowDialog();
+        }
+
+        private void btnBimeh_Click(object sender, EventArgs e)
+        {
+            new frmBimeh().ShowDialog();
+        }
+
+        private void btnVisit_Click(object sender, EventArgs e)
+        {
+            new frmVizit().ShowDialog();
+        }
+
+        private void btnListVisit_Click(object sender, EventArgs e)
+        {
+            new frmListVisit().ShowDialog();
+        }
     }
 }

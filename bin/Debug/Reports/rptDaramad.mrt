@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="0" />
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="3">
+      <value>,strAzTarikh,strAzTarikh,System.String,,False,False</value>
+      <value>,strTaTarikh,strTaTarikh,System.String,,False,False</value>
+      <value>,Daramad,Daramad,System.String,,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="2" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="3">
+        <PageHeaderBand1 Ref="3" type="PageHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.2,5.05,0.78</ClientRectangle>
+          <Components isList="true" count="7">
+            <Text1 Ref="4" type="Text" isKey="true">
+              <Brush>Khaki</Brush>
+              <ClientRectangle>0,0,5.05,0.76</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="2" />
+              <Parent isRef="3" />
+              <TextBrush>Black</TextBrush>
+            </Text1>
+            <Text2 Ref="5" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.02,0,3,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>IRANSans,14.25,Regular,Point,False,0</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="2" />
+              <Parent isRef="3" />
+              <Text>لیست بیمه های طرف قرار داد</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+            <Text3 Ref="6" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.4,0.43,0.6,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>IRANSans,10</Font>
+              <Guid>8727dd22d3f44c01bc2ec3c451a2a386</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="2" />
+              <Parent isRef="3" />
+              <Text>: از تاریخ</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+            <Text4 Ref="7" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.59,0.43,0.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>IRANSans,10</Font>
+              <Guid>0ea6334b8e52447b8eb25cd3a512a820</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="2" />
+              <Parent isRef="3" />
+              <Text>{strAzTarikh}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+            <Text5 Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.9,0.44,0.6,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>IRANSans,10</Font>
+              <Guid>1c9ea7d5a34549a8995bf1f5f4616b95</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="2" />
+              <Parent isRef="3" />
+              <Text>: تا تاریخ</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text5>
+            <Text6 Ref="9" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.09,0.44,0.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>IRANSans,10</Font>
+              <Guid>b18fc95c99444b4abdf8060cd1d3aa36</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="2" />
+              <Parent isRef="3" />
+              <Text>{strTaTarikh}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text6>
+            <HorizontalLinePrimitive1 Ref="10" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,0.76,5.05,0.01</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="11" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive1</Name>
+              <Page isRef="2" />
+              <Parent isRef="3" />
+              <Size>2</Size>
+              <StartCap Ref="12" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>PageHeaderBand1</Name>
+          <Page isRef="2" />
+          <Parent isRef="2" />
+        </PageHeaderBand1>
+        <Text7 Ref="13" type="Text" isKey="true">
+          <Brush>[242:242:242]</Brush>
+          <ClientRectangle>1.8,1.2,3,0.3</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>IRANSans,10</Font>
+          <Guid>78a93a09717c41adb4647e09204c741d</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text7</Name>
+          <Page isRef="2" />
+          <Parent isRef="2" />
+          <Text>: گزارش درآمد های حاصل از تاریخ انتخاب شده</Text>
+          <TextBrush>Black</TextBrush>
+          <TextQuality>Wysiwyg</TextQuality>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text7>
+        <Text8 Ref="14" type="Text" isKey="true">
+          <Brush>[216:216:216]</Brush>
+          <ClientRectangle>0.3,1.2,1.4,0.3</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>IRANSans,10</Font>
+          <Guid>d42cec117a584adcae777965c6064913</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text8</Name>
+          <Page isRef="2" />
+          <Parent isRef="2" />
+          <Text>{Daramad} ريال</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="15" type="NumberFormat" isKey="true">
+            <DecimalDigits>0</DecimalDigits>
+            <GroupSeparator>,</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+            <UseLocalSetting>False</UseLocalSetting>
+          </TextFormat>
+          <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text8>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>afe32a159360495e94ba12cf68832156</Guid>
+      <Margins>0.39,0.39,0.39,0.39</Margins>
+      <Name>Page1</Name>
+      <PageHeight>8.27</PageHeight>
+      <PageWidth>5.83</PageWidth>
+      <PaperSize>A5</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="16" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="17" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>11/27/2018 9:25:12 PM</ReportChanged>
+  <ReportCreated>11/20/2018 7:51:08 PM</ReportCreated>
+  <ReportFile>D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\bin\Debug\Reports\rptDaramad.mrt</ReportFile>
+  <ReportGuid>6201b2239c6c40be9660ff98624651cc</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2015.1.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="2">
+    <Style1 Ref="18" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Brush>WhiteSmoke</Brush>
+      <Conditions isList="true" count="0" />
+      <Font>IRANSans,8.25,Regular,Point,False,0</Font>
+      <Name>Style1</Name>
+      <TextBrush>Maroon</TextBrush>
+    </Style1>
+    <Style2 Ref="19" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Brush>Silver</Brush>
+      <Conditions isList="true" count="0" />
+      <Font>Arial,8</Font>
+      <Name>Style2</Name>
+      <TextBrush>DarkRed</TextBrush>
+    </Style2>
+  </Styles>
+</StiSerializer>

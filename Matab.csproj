@@ -75,6 +75,18 @@
     <Compile Include="Class_ClearControls.cs" />
     <Compile Include="clc_variable.cs" />
     <Compile Include="Connection_Query.cs" />
+    <Compile Include="frmBimeh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBimeh.Designer.cs">
+      <DependentUpon>frmBimeh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKhadamat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKhadamat.Designer.cs">
+      <DependentUpon>frmKhadamat.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmListMonshi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +104,12 @@
     </Compile>
     <Compile Include="frmListPardakht.Designer.cs">
       <DependentUpon>frmListPardakht.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListVisit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListVisit.Designer.cs">
+      <DependentUpon>frmListVisit.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -129,8 +147,20 @@
     <Compile Include="frmUsers.Designer.cs">
       <DependentUpon>frmUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmVizit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVizit.Designer.cs">
+      <DependentUpon>frmVizit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmBimeh.resx">
+      <DependentUpon>frmBimeh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKhadamat.resx">
+      <DependentUpon>frmKhadamat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmListMonshi.resx">
       <DependentUpon>frmListMonshi.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,6 +169,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmListPardakht.resx">
       <DependentUpon>frmListPardakht.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListVisit.resx">
+      <DependentUpon>frmListVisit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -157,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmUsers.resx">
       <DependentUpon>frmUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVizit.resx">
+      <DependentUpon>frmVizit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -204,6 +240,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icons_clinic.ico" />
+    <None Include="Resources\icons8-stethoscope-40%281%29.png" />
+    <None Include="Resources\icons8-list-view-40.png" />
+    <None Include="Resources\icons8-synchronize-32.png" />
+    <None Include="Resources\icons8-ledger-40.png" />
+    <None Include="Resources\icons8-treatment-40.png" />
     <None Include="Resources\icons8-test-passed-40.png" />
     <None Include="Resources\icons8-timesheet-40.png" />
     <None Include="Resources\icons8-purchase-order-40.png" />
