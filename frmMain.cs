@@ -113,5 +113,15 @@ namespace Matab
         {
             new frmListVisit().ShowDialog();
         }
+
+        private void btnParvandeh_Click(object sender, EventArgs e)
+        {
+            new frmParvandeh().ShowDialog();
+        }
+
+        private void btnListParvandeh_Click(object sender, EventArgs e)
+        {
+            new frmListParvandeh().ShowDialog();
+        }
     }
 }

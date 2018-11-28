@@ -31,6 +31,10 @@ namespace ClearClass
                     {
                         (control as IntegerInput).Text = "";
                     }
+                    if (control is MaskedTextBoxAdv)
+                    {
+                        (control as MaskedTextBoxAdv).Text = "";
+                    }
                     else
                     {
                         func(control.Controls);

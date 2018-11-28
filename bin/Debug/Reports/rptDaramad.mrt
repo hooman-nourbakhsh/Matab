@@ -45,7 +45,7 @@
               <Name>Text2</Name>
               <Page isRef="2" />
               <Parent isRef="3" />
-              <Text>لیست بیمه های طرف قرار داد</Text>
+              <Text>گزارش درآمد های حاصل از ویزیت</Text>
               <TextBrush>Black</TextBrush>
               <TextQuality>Wysiwyg</TextQuality>
               <Type>Expression</Type>
@@ -206,10 +206,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>11/27/2018 9:25:12 PM</ReportChanged>
+  <ReportChanged>11/28/2018 6:57:36 PM</ReportChanged>
   <ReportCreated>11/20/2018 7:51:08 PM</ReportCreated>
   <ReportFile>D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\bin\Debug\Reports\rptDaramad.mrt</ReportFile>
-  <ReportGuid>6201b2239c6c40be9660ff98624651cc</ReportGuid>
+  <ReportGuid>9691db46e15e4a51bb3254f73656403d</ReportGuid>
   <ReportName>Report</ReportName>
   <ReportUnit>Inches</ReportUnit>
   <ReportVersion>2015.1.0</ReportVersion>

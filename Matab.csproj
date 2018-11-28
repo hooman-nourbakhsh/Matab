@@ -105,6 +105,12 @@
     <Compile Include="frmListPardakht.Designer.cs">
       <DependentUpon>frmListPardakht.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmListParvandeh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListParvandeh.Designer.cs">
+      <DependentUpon>frmListParvandeh.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmListVisit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,12 @@
     </Compile>
     <Compile Include="frmNobat.Designer.cs">
       <DependentUpon>frmNobat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmParvandeh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmParvandeh.Designer.cs">
+      <DependentUpon>frmParvandeh.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSetting.cs">
       <SubType>Form</SubType>
@@ -170,6 +182,9 @@
     <EmbeddedResource Include="frmListPardakht.resx">
       <DependentUpon>frmListPardakht.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmListParvandeh.resx">
+      <DependentUpon>frmListParvandeh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmListVisit.resx">
       <DependentUpon>frmListVisit.cs</DependentUpon>
     </EmbeddedResource>
@@ -184,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmNobat.resx">
       <DependentUpon>frmNobat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmParvandeh.resx">
+      <DependentUpon>frmParvandeh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSetting.resx">
       <DependentUpon>frmSetting.cs</DependentUpon>
@@ -240,6 +258,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icons_clinic.ico" />
+    <None Include="Resources\icons8-static-views-40.png" />
+    <None Include="Resources\icons8-resume-40.png" />
     <None Include="Resources\icons8-stethoscope-40%281%29.png" />
     <None Include="Resources\icons8-list-view-40.png" />
     <None Include="Resources\icons8-synchronize-32.png" />

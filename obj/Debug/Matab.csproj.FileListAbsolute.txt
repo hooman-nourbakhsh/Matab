@@ -32,11 +32,13 @@ D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\obj\Debug\Matab.frm
 D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\obj\Debug\Matab.frmListMonshi.resources
 D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\obj\Debug\Matab.frmListNobat.resources
 D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\obj\Debug\Matab.frmListPardakht.resources
+D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\obj\Debug\Matab.frmListParvandeh.resources
 D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\obj\Debug\Matab.frmListVisit.resources
 D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\obj\Debug\Matab.frmLogin.resources
 D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\obj\Debug\Matab.frmMain.resources
 D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\obj\Debug\Matab.frmMonshi.resources
 D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\obj\Debug\Matab.frmNobat.resources
+D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\obj\Debug\Matab.frmParvandeh.resources
 D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\obj\Debug\Matab.frmSetting.resources
 D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\obj\Debug\Matab.frmUsers.resources
 D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\obj\Debug\Matab.frmVizit.resources

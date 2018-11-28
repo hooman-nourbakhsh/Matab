@@ -238,7 +238,7 @@
             this.dgvUsers.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvUsers.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvUsers.EnableHeadersVisualStyles = false;
-            this.dgvUsers.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.dgvUsers.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
             this.dgvUsers.Location = new System.Drawing.Point(0, 0);
             this.dgvUsers.Name = "dgvUsers";
             this.dgvUsers.ReadOnly = true;
@@ -416,7 +416,7 @@
             this.Name = "frmUsers";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "فرم تعریف کاربران";
+            this.Text = "تعریف کاربران";
             this.Load += new System.EventHandler(this.frmUsers_Load);
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel4.ResumeLayout(false);

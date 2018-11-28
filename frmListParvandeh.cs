@@ -5,10 +5,10 @@ using Stimulsoft.Report;
 
 namespace Matab
 {
-    public partial class frmListNobat : DevComponents.DotNetBar.OfficeForm
+    public partial class frmListParvandeh : DevComponents.DotNetBar.OfficeForm
     {
         Connection_Query query = new Connection_Query();
-        public frmListNobat()
+        public frmListParvandeh()
         {
             InitializeComponent();
         }
@@ -17,7 +17,7 @@ namespace Matab
             query.OpenConection();
             try
             {
-                dgvListNobat.DataSource = query.ShowData(string.Format("select * from tblNobat where Tarikh like '%' + '{0}' + '%' ", mskTarikh.Text));
+                dgvListParvandeh.DataSource = query.ShowData("select * from tblParvandeh");
             }
             catch (Exception)
             {
@@ -26,41 +26,33 @@ namespace Matab
             query.CloseConnection();
         }
 
-        private void frmListNobat_Load(object sender, EventArgs e)
+        private void frmListParvandeh_Load(object sender, EventArgs e)
         {
             System.Globalization.PersianCalendar P = new System.Globalization.PersianCalendar();
             mskTarikh.Text = P.GetYear(DateTime.Now).ToString() + P.GetMonth(DateTime.Now).ToString("0#") + P.GetDayOfMonth(DateTime.Now).ToString("0#");
-            mskAzTarikh.Text = P.GetYear(DateTime.Now).ToString() + P.GetMonth(DateTime.Now).ToString("0#") + P.GetDayOfMonth(DateTime.Now).ToString("0#");
-            mskTaTarikh.Text = P.GetYear(DateTime.Now).ToString() + P.GetMonth(DateTime.Now).ToString("0#") + P.GetDayOfMonth(DateTime.Now.AddDays(1)).ToString("0#");
-
             Display();
-        }
-
-        private void txtLName_TextChanged(object sender, EventArgs e)
-        {
-            dgvListNobat.DataSource = query.ShowData(string.Format("select * from tblNobat where LNameBimar like '%' + '{0}' + '%' ", txtLName.Text));
-        }
-
-        private void txtNobat_TextChanged(object sender, EventArgs e)
-        {
-            dgvListNobat.DataSource = query.ShowData(string.Format("select * from tblNobat where Nobat like '%' + '{0}' + '%' ", txtNobat.Text));
-
         }
 
         private void mskTarikh_TextChanged(object sender, EventArgs e)
         {
-            dgvListNobat.DataSource = query.ShowData(string.Format("select * from tblNobat where Tarikh like '%' + '{0}' + '%' ", mskTarikh.Text));
+            query.OpenConection();
+            try
+            {
+                dgvListParvandeh.DataSource = query.ShowData(string.Format("select * from tblParvandeh where T_Baadi like '%' + '{0}' + '%' ", mskTarikh.Text));
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("در هنگام اتصال به بانک اطلاعاتی خطایی رخ داده است ، مجددا تلاش کنید", "Matab", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            query.CloseConnection();
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
+        private void txtLName_TextChanged(object sender, EventArgs e)
         {
             query.OpenConection();
             try
             {
-                int x = Convert.ToInt32(dgvListNobat.SelectedCells[0].Value);
-                query.ExecuteQueries("delete from tblNobat where ID=" + x);
-                MessageBox.Show("عملیات با موفقیت انجام شد", "Matab", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Display();
+                dgvListParvandeh.DataSource = query.ShowData(string.Format("select * from tblParvandeh where LName like '%' + '{0}' + '%' ", txtLName.Text));
             }
             catch (Exception)
             {
@@ -74,10 +66,9 @@ namespace Matab
             try
             {
                 StiReport report = new StiReport();
-                report.Load("Reports/rptNobat.mrt");
+                report.Load("Reports/rptParvandeh.mrt");
                 report.Compile();
-                report["strAzTarikh"] = mskAzTarikh.Text;
-                report["strTaTarikh"] = mskTaTarikh.Text;
+                report["strMoraje"] = mskTarikh.Text;
                 report.ShowWithRibbonGUI();
             }
             catch (Exception)
