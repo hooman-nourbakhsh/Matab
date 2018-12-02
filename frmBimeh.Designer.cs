@@ -37,13 +37,17 @@
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.groupPanel4 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.dgvBime = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NameBimeh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TarefeBimeh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tozihat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.btnPrint = new DevComponents.DotNetBar.ButtonX();
             this.btnEdit = new DevComponents.DotNetBar.ButtonX();
             this.btnDelete = new DevComponents.DotNetBar.ButtonX();
             this.btnSave = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.txtTarefe = new DevComponents.Editors.IntegerInput();
-            this.txtCode = new DevComponents.Editors.IntegerInput();
             this.txtTozihat = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtNameBimeh = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.label6 = new System.Windows.Forms.Label();
@@ -51,18 +55,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.btnPrint = new DevComponents.DotNetBar.ButtonX();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NameBimeh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TarefeBimeh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tozihat = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtCode = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.groupPanel1.SuspendLayout();
             this.groupPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBime)).BeginInit();
             this.groupPanel3.SuspendLayout();
             this.groupPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtTarefe)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -194,6 +193,40 @@
             this.dgvBime.TabIndex = 0;
             this.dgvBime.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dgvBime_MouseUp);
             // 
+            // ID
+            // 
+            this.ID.DataPropertyName = "ID";
+            this.ID.HeaderText = "کد بیمه";
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            this.ID.Width = 80;
+            // 
+            // NameBimeh
+            // 
+            this.NameBimeh.DataPropertyName = "NameBimeh";
+            this.NameBimeh.HeaderText = "نام بیمه";
+            this.NameBimeh.Name = "NameBimeh";
+            this.NameBimeh.ReadOnly = true;
+            this.NameBimeh.Width = 130;
+            // 
+            // TarefeBimeh
+            // 
+            this.TarefeBimeh.DataPropertyName = "TarefeBimeh";
+            dataGridViewCellStyle2.Format = "N0";
+            dataGridViewCellStyle2.NullValue = null;
+            this.TarefeBimeh.DefaultCellStyle = dataGridViewCellStyle2;
+            this.TarefeBimeh.HeaderText = "تعرفه بیمه";
+            this.TarefeBimeh.Name = "TarefeBimeh";
+            this.TarefeBimeh.ReadOnly = true;
+            // 
+            // Tozihat
+            // 
+            this.Tozihat.DataPropertyName = "Tozihat";
+            this.Tozihat.HeaderText = "توضیحات";
+            this.Tozihat.Name = "Tozihat";
+            this.Tozihat.ReadOnly = true;
+            this.Tozihat.Width = 200;
+            // 
             // groupPanel3
             // 
             this.groupPanel3.CanvasColor = System.Drawing.SystemColors.Control;
@@ -237,6 +270,21 @@
             // 
             this.groupPanel3.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel3.TabIndex = 1;
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnPrint.BackColor = System.Drawing.Color.Transparent;
+            this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPrint.Image = global::Matab.Properties.Resources.icons8_print_32;
+            this.btnPrint.Location = new System.Drawing.Point(6, 1);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
+            this.btnPrint.Size = new System.Drawing.Size(131, 38);
+            this.btnPrint.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnPrint.TabIndex = 3;
+            this.btnPrint.Text = "چاپ";
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // btnEdit
             // 
@@ -288,8 +336,8 @@
             this.groupPanel2.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel2.Controls.Add(this.txtTarefe);
-            this.groupPanel2.Controls.Add(this.txtCode);
             this.groupPanel2.Controls.Add(this.txtTozihat);
+            this.groupPanel2.Controls.Add(this.txtCode);
             this.groupPanel2.Controls.Add(this.txtNameBimeh);
             this.groupPanel2.Controls.Add(this.label6);
             this.groupPanel2.Controls.Add(this.label5);
@@ -339,27 +387,11 @@
             this.txtTarefe.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtTarefe.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             this.txtTarefe.FocusHighlightEnabled = true;
-            this.txtTarefe.Location = new System.Drawing.Point(72, 76);
+            this.txtTarefe.Location = new System.Drawing.Point(72, 78);
             this.txtTarefe.MinValue = 0;
             this.txtTarefe.Name = "txtTarefe";
             this.txtTarefe.Size = new System.Drawing.Size(299, 32);
             this.txtTarefe.TabIndex = 2;
-            // 
-            // txtCode
-            // 
-            // 
-            // 
-            // 
-            this.txtCode.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.txtCode.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtCode.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.txtCode.DisplayFormat = "N0";
-            this.txtCode.FocusHighlightEnabled = true;
-            this.txtCode.Location = new System.Drawing.Point(72, 4);
-            this.txtCode.MinValue = 0;
-            this.txtCode.Name = "txtCode";
-            this.txtCode.Size = new System.Drawing.Size(299, 32);
-            this.txtCode.TabIndex = 0;
             // 
             // txtTozihat
             // 
@@ -369,7 +401,7 @@
             this.txtTozihat.Border.Class = "TextBoxBorder";
             this.txtTozihat.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtTozihat.FocusHighlightEnabled = true;
-            this.txtTozihat.Location = new System.Drawing.Point(71, 114);
+            this.txtTozihat.Location = new System.Drawing.Point(71, 116);
             this.txtTozihat.Multiline = true;
             this.txtTozihat.Name = "txtTozihat";
             this.txtTozihat.PreventEnterBeep = true;
@@ -385,7 +417,7 @@
             this.txtNameBimeh.Border.Class = "TextBoxBorder";
             this.txtNameBimeh.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtNameBimeh.FocusHighlightEnabled = true;
-            this.txtNameBimeh.Location = new System.Drawing.Point(72, 38);
+            this.txtNameBimeh.Location = new System.Drawing.Point(72, 40);
             this.txtNameBimeh.Name = "txtNameBimeh";
             this.txtNameBimeh.PreventEnterBeep = true;
             this.txtNameBimeh.Size = new System.Drawing.Size(299, 32);
@@ -395,7 +427,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(376, 116);
+            this.label6.Location = new System.Drawing.Point(376, 118);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(68, 26);
             this.label6.TabIndex = 0;
@@ -405,7 +437,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(376, 79);
+            this.label5.Location = new System.Drawing.Point(376, 81);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(105, 26);
             this.label5.TabIndex = 0;
@@ -415,7 +447,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(376, 40);
+            this.label2.Location = new System.Drawing.Point(376, 42);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 26);
             this.label2.TabIndex = 0;
@@ -425,7 +457,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(376, 8);
+            this.label1.Location = new System.Drawing.Point(376, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 26);
             this.label1.TabIndex = 0;
@@ -436,54 +468,19 @@
             this.errorProvider1.ContainerControl = this;
             this.errorProvider1.RightToLeft = true;
             // 
-            // btnPrint
+            // txtCode
             // 
-            this.btnPrint.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnPrint.BackColor = System.Drawing.Color.Transparent;
-            this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPrint.Image = global::Matab.Properties.Resources.icons8_print_32;
-            this.btnPrint.Location = new System.Drawing.Point(6, 1);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
-            this.btnPrint.Size = new System.Drawing.Size(131, 38);
-            this.btnPrint.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnPrint.TabIndex = 4;
-            this.btnPrint.Text = "چاپ";
-            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
-            // ID
             // 
-            this.ID.DataPropertyName = "ID";
-            this.ID.HeaderText = "کد بیمه";
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            this.ID.Width = 80;
             // 
-            // NameBimeh
-            // 
-            this.NameBimeh.DataPropertyName = "NameBimeh";
-            this.NameBimeh.HeaderText = "نام بیمه";
-            this.NameBimeh.Name = "NameBimeh";
-            this.NameBimeh.ReadOnly = true;
-            this.NameBimeh.Width = 130;
-            // 
-            // TarefeBimeh
-            // 
-            this.TarefeBimeh.DataPropertyName = "TarefeBimeh";
-            dataGridViewCellStyle2.Format = "N0";
-            dataGridViewCellStyle2.NullValue = null;
-            this.TarefeBimeh.DefaultCellStyle = dataGridViewCellStyle2;
-            this.TarefeBimeh.HeaderText = "تعرفه بیمه";
-            this.TarefeBimeh.Name = "TarefeBimeh";
-            this.TarefeBimeh.ReadOnly = true;
-            // 
-            // Tozihat
-            // 
-            this.Tozihat.DataPropertyName = "Tozihat";
-            this.Tozihat.HeaderText = "توضیحات";
-            this.Tozihat.Name = "Tozihat";
-            this.Tozihat.ReadOnly = true;
-            this.Tozihat.Width = 200;
+            this.txtCode.Border.Class = "TextBoxBorder";
+            this.txtCode.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtCode.Location = new System.Drawing.Point(71, 2);
+            this.txtCode.Name = "txtCode";
+            this.txtCode.PreventEnterBeep = true;
+            this.txtCode.ReadOnly = true;
+            this.txtCode.Size = new System.Drawing.Size(299, 32);
+            this.txtCode.TabIndex = 0;
             // 
             // frmBimeh
             // 
@@ -510,7 +507,6 @@
             this.groupPanel2.ResumeLayout(false);
             this.groupPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtTarefe)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCode)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
@@ -531,7 +527,6 @@
         private DevComponents.DotNetBar.ButtonX btnDelete;
         private DevComponents.DotNetBar.ButtonX btnSave;
         private DevComponents.Editors.IntegerInput txtTarefe;
-        private DevComponents.Editors.IntegerInput txtCode;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel4;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private DevComponents.DotNetBar.Controls.DataGridViewX dgvBime;
@@ -540,5 +535,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn NameBimeh;
         private System.Windows.Forms.DataGridViewTextBoxColumn TarefeBimeh;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tozihat;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtCode;
     }
 }

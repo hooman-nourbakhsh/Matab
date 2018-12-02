@@ -69,7 +69,7 @@
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel1.Location = new System.Drawing.Point(0, 0);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(447, 407);
+            this.groupPanel1.Size = new System.Drawing.Size(470, 407);
             // 
             // 
             // 
@@ -112,7 +112,7 @@
             this.groupPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupPanel3.Location = new System.Drawing.Point(0, 355);
             this.groupPanel3.Name = "groupPanel3";
-            this.groupPanel3.Size = new System.Drawing.Size(441, 46);
+            this.groupPanel3.Size = new System.Drawing.Size(464, 46);
             // 
             // 
             // 
@@ -149,7 +149,7 @@
             this.btnEdit.BackColor = System.Drawing.Color.Transparent;
             this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEdit.Image = global::Matab.Properties.Resources.icons8_edit_file_32;
-            this.btnEdit.Location = new System.Drawing.Point(13, 1);
+            this.btnEdit.Location = new System.Drawing.Point(25, 1);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
             this.btnEdit.Size = new System.Drawing.Size(131, 38);
@@ -164,7 +164,7 @@
             this.btnDelete.BackColor = System.Drawing.Color.Transparent;
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDelete.Image = global::Matab.Properties.Resources.icons8_trash_32;
-            this.btnDelete.Location = new System.Drawing.Point(152, 1);
+            this.btnDelete.Location = new System.Drawing.Point(164, 1);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
             this.btnDelete.Size = new System.Drawing.Size(131, 38);
@@ -179,7 +179,7 @@
             this.btnSave.BackColor = System.Drawing.Color.Transparent;
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.Image = global::Matab.Properties.Resources.icons8_save_32;
-            this.btnSave.Location = new System.Drawing.Point(291, 1);
+            this.btnSave.Location = new System.Drawing.Point(303, 1);
             this.btnSave.Name = "btnSave";
             this.btnSave.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
             this.btnSave.Size = new System.Drawing.Size(131, 38);
@@ -211,7 +211,7 @@
             this.groupPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupPanel2.Location = new System.Drawing.Point(0, 0);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(441, 353);
+            this.groupPanel2.Size = new System.Drawing.Size(464, 353);
             // 
             // 
             // 
@@ -250,11 +250,11 @@
             this.txtHoghogh.BackgroundStyle.Class = "DateTimeInputBackground";
             this.txtHoghogh.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtHoghogh.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.txtHoghogh.Location = new System.Drawing.Point(1, 160);
+            this.txtHoghogh.Location = new System.Drawing.Point(21, 162);
             this.txtHoghogh.MinValue = 0;
             this.txtHoghogh.Name = "txtHoghogh";
             this.txtHoghogh.Size = new System.Drawing.Size(299, 32);
-            this.txtHoghogh.TabIndex = 8;
+            this.txtHoghogh.TabIndex = 5;
             // 
             // mskTarikh
             // 
@@ -266,7 +266,7 @@
             this.mskTarikh.ButtonClear.SymbolColor = System.Drawing.Color.Red;
             this.mskTarikh.ButtonClear.Visible = true;
             this.mskTarikh.FocusHighlightEnabled = true;
-            this.mskTarikh.Location = new System.Drawing.Point(0, 195);
+            this.mskTarikh.Location = new System.Drawing.Point(20, 197);
             this.mskTarikh.Mask = "####/##/##";
             this.mskTarikh.Name = "mskTarikh";
             this.mskTarikh.Size = new System.Drawing.Size(299, 31);
@@ -280,8 +280,8 @@
             this.btnSearch.BackColor = System.Drawing.Color.Transparent;
             this.btnSearch.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat;
             this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
-            this.btnSearch.Location = new System.Drawing.Point(1, 3);
+            this.btnSearch.Image = global::Matab.Properties.Resources.icons8_search_32;
+            this.btnSearch.Location = new System.Drawing.Point(21, 5);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(35, 32);
             this.btnSearch.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -297,7 +297,7 @@
             this.txtTozihat.Border.Class = "TextBoxBorder";
             this.txtTozihat.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtTozihat.FocusHighlightEnabled = true;
-            this.txtTozihat.Location = new System.Drawing.Point(1, 232);
+            this.txtTozihat.Location = new System.Drawing.Point(21, 234);
             this.txtTozihat.Multiline = true;
             this.txtTozihat.Name = "txtTozihat";
             this.txtTozihat.PreventEnterBeep = true;
@@ -313,7 +313,7 @@
             this.txtTel.Border.Class = "TextBoxBorder";
             this.txtTel.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtTel.FocusHighlightEnabled = true;
-            this.txtTel.Location = new System.Drawing.Point(1, 120);
+            this.txtTel.Location = new System.Drawing.Point(21, 122);
             this.txtTel.Name = "txtTel";
             this.txtTel.PreventEnterBeep = true;
             this.txtTel.Size = new System.Drawing.Size(299, 32);
@@ -327,7 +327,7 @@
             this.txtLName.Border.Class = "TextBoxBorder";
             this.txtLName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtLName.FocusHighlightEnabled = true;
-            this.txtLName.Location = new System.Drawing.Point(1, 81);
+            this.txtLName.Location = new System.Drawing.Point(21, 83);
             this.txtLName.Name = "txtLName";
             this.txtLName.PreventEnterBeep = true;
             this.txtLName.Size = new System.Drawing.Size(299, 32);
@@ -341,7 +341,7 @@
             this.txtFName.Border.Class = "TextBoxBorder";
             this.txtFName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtFName.FocusHighlightEnabled = true;
-            this.txtFName.Location = new System.Drawing.Point(1, 42);
+            this.txtFName.Location = new System.Drawing.Point(21, 44);
             this.txtFName.Name = "txtFName";
             this.txtFName.PreventEnterBeep = true;
             this.txtFName.Size = new System.Drawing.Size(299, 32);
@@ -355,7 +355,7 @@
             this.txtID.Border.Class = "TextBoxBorder";
             this.txtID.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtID.FocusHighlightEnabled = true;
-            this.txtID.Location = new System.Drawing.Point(42, 3);
+            this.txtID.Location = new System.Drawing.Point(62, 5);
             this.txtID.Name = "txtID";
             this.txtID.PreventEnterBeep = true;
             this.txtID.Size = new System.Drawing.Size(258, 32);
@@ -365,7 +365,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Location = new System.Drawing.Point(306, 197);
+            this.label7.Location = new System.Drawing.Point(326, 199);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(130, 26);
             this.label7.TabIndex = 0;
@@ -375,7 +375,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(306, 234);
+            this.label6.Location = new System.Drawing.Point(326, 236);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(68, 26);
             this.label6.TabIndex = 0;
@@ -385,7 +385,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(306, 160);
+            this.label5.Location = new System.Drawing.Point(326, 162);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(110, 26);
             this.label5.TabIndex = 0;
@@ -395,7 +395,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(306, 122);
+            this.label4.Location = new System.Drawing.Point(326, 124);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(38, 26);
             this.label4.TabIndex = 0;
@@ -405,7 +405,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(306, 83);
+            this.label3.Location = new System.Drawing.Point(326, 85);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 26);
             this.label3.TabIndex = 0;
@@ -415,7 +415,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(306, 44);
+            this.label2.Location = new System.Drawing.Point(326, 46);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(27, 26);
             this.label2.TabIndex = 0;
@@ -425,7 +425,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(306, 5);
+            this.label1.Location = new System.Drawing.Point(326, 7);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(26, 26);
             this.label1.TabIndex = 0;
@@ -434,12 +434,13 @@
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            this.errorProvider1.RightToLeft = true;
             // 
             // frmMonshi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(447, 407);
+            this.ClientSize = new System.Drawing.Size(470, 407);
             this.Controls.Add(this.groupPanel1);
             this.DoubleBuffered = true;
             this.EnableGlass = false;

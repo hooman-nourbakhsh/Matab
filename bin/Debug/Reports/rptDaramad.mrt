@@ -140,7 +140,7 @@
           <Parent isRef="2" />
         </PageHeaderBand1>
         <Text7 Ref="13" type="Text" isKey="true">
-          <Brush>[242:242:242]</Brush>
+          <Brush>[216:216:216]</Brush>
           <ClientRectangle>1.8,1.2,3,0.3</ClientRectangle>
           <Conditions isList="true" count="0" />
           <Font>IRANSans,10</Font>
@@ -157,7 +157,7 @@
           <VertAlignment>Center</VertAlignment>
         </Text7>
         <Text8 Ref="14" type="Text" isKey="true">
-          <Brush>[216:216:216]</Brush>
+          <Brush>[242:242:242]</Brush>
           <ClientRectangle>0.3,1.2,1.4,0.3</ClientRectangle>
           <Conditions isList="true" count="0" />
           <Font>IRANSans,10</Font>
@@ -209,7 +209,7 @@
   <ReportChanged>11/28/2018 6:57:36 PM</ReportChanged>
   <ReportCreated>11/20/2018 7:51:08 PM</ReportCreated>
   <ReportFile>D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\bin\Debug\Reports\rptDaramad.mrt</ReportFile>
-  <ReportGuid>9691db46e15e4a51bb3254f73656403d</ReportGuid>
+  <ReportGuid>dba1c2e4f0fc48d68aa1705829a2bf90</ReportGuid>
   <ReportName>Report</ReportName>
   <ReportUnit>Inches</ReportUnit>
   <ReportVersion>2015.1.0</ReportVersion>

@@ -1,5 +1,4 @@
-﻿using ClearClass;
-using Connection_Class;
+﻿using Connection_Class;
 using System;
 using System.Windows.Forms;
 
@@ -50,7 +49,6 @@ namespace Matab
             {
                 query.ExecuteQueries(string.Format("insert into tblPardakht values ('{0}','{1}','{2}','{3}','{4}')", dgvListMonshi.CurrentRow.Cells[0].Value, dgvListMonshi.CurrentRow.Cells[2].Value, dgvListMonshi.CurrentRow.Cells[4].Value, dgvListMonshi.CurrentRow.Cells[5].Value, dgvListMonshi.CurrentRow.Cells[6].Value));
                 MessageBox.Show("پرداخت حقوق منشی با موفقیت انجام شد", "Matab", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                ClearControls.ClearTextBoxes(this);
             }
             catch (Exception)
             {

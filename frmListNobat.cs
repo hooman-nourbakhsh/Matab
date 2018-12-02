@@ -32,7 +32,6 @@ namespace Matab
             mskTarikh.Text = P.GetYear(DateTime.Now).ToString() + P.GetMonth(DateTime.Now).ToString("0#") + P.GetDayOfMonth(DateTime.Now).ToString("0#");
             mskAzTarikh.Text = P.GetYear(DateTime.Now).ToString() + P.GetMonth(DateTime.Now).ToString("0#") + P.GetDayOfMonth(DateTime.Now).ToString("0#");
             mskTaTarikh.Text = P.GetYear(DateTime.Now).ToString() + P.GetMonth(DateTime.Now).ToString("0#") + P.GetDayOfMonth(DateTime.Now.AddDays(1)).ToString("0#");
-
             Display();
         }
 
@@ -44,7 +43,6 @@ namespace Matab
         private void txtNobat_TextChanged(object sender, EventArgs e)
         {
             dgvListNobat.DataSource = query.ShowData(string.Format("select * from tblNobat where Nobat like '%' + '{0}' + '%' ", txtNobat.Text));
-
         }
 
         private void mskTarikh_TextChanged(object sender, EventArgs e)

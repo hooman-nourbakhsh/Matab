@@ -43,30 +43,6 @@ namespace Matab
             query.CloseConnection();
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            query.OpenConection();
-            try
-            {
-                if (txtCodeVisit.Text == "")
-                {
-                    errorProvider1.SetError(txtCodeVisit, "شماره ویزیت وارد نشده است");
-                    txtCodeVisit.Focus();
-                }
-                else
-                {
-                    query.ExecuteQueries("delete from tblVisit where ID_Visit=" + txtCodeVisit.Text);
-                    MessageBox.Show("عملیات با موفقیت انجام شد", "Matab", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    ClearControls.ClearTextBoxes(this);
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("در هنگام اتصال به بانک اطلاعاتی خطایی رخ داده است ، مجددا تلاش کنید", "Matab", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            query.CloseConnection();
-        }
-
         private void btnEdit_Click(object sender, EventArgs e)
         {
             query.OpenConection();

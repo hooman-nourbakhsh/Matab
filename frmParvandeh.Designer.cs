@@ -36,7 +36,6 @@
             this.btnDelete = new DevComponents.DotNetBar.ButtonX();
             this.btnSave = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.txtTarefe = new DevComponents.Editors.IntegerInput();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.cmbNameBimeh = new DevComponents.DotNetBar.Controls.ComboBoxEx();
@@ -55,6 +54,7 @@
             this.txtNoskhe = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtBimari_Ghabli = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtBimari_Feeli = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtTarefe = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtLName = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtFName = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.label7 = new System.Windows.Forms.Label();
@@ -69,7 +69,6 @@
             this.groupPanel1.SuspendLayout();
             this.groupPanel3.SuspendLayout();
             this.groupPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTarefe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCodeParvandeh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -207,7 +206,6 @@
             // 
             this.groupPanel2.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel2.Controls.Add(this.txtTarefe);
             this.groupPanel2.Controls.Add(this.label12);
             this.groupPanel2.Controls.Add(this.label13);
             this.groupPanel2.Controls.Add(this.cmbNameBimeh);
@@ -224,6 +222,7 @@
             this.groupPanel2.Controls.Add(this.txtNoskhe);
             this.groupPanel2.Controls.Add(this.txtBimari_Ghabli);
             this.groupPanel2.Controls.Add(this.txtBimari_Feeli);
+            this.groupPanel2.Controls.Add(this.txtTarefe);
             this.groupPanel2.Controls.Add(this.txtLName);
             this.groupPanel2.Controls.Add(this.txtFName);
             this.groupPanel2.Controls.Add(this.label7);
@@ -269,21 +268,6 @@
             this.groupPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel2.TabIndex = 0;
             // 
-            // txtTarefe
-            // 
-            // 
-            // 
-            // 
-            this.txtTarefe.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.txtTarefe.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtTarefe.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.txtTarefe.FocusHighlightEnabled = true;
-            this.txtTarefe.Location = new System.Drawing.Point(4, 153);
-            this.txtTarefe.MinValue = 0;
-            this.txtTarefe.Name = "txtTarefe";
-            this.txtTarefe.Size = new System.Drawing.Size(241, 32);
-            this.txtTarefe.TabIndex = 15;
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -314,7 +298,7 @@
             this.cmbNameBimeh.Name = "cmbNameBimeh";
             this.cmbNameBimeh.Size = new System.Drawing.Size(217, 33);
             this.cmbNameBimeh.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cmbNameBimeh.TabIndex = 6;
+            this.cmbNameBimeh.TabIndex = 9;
             this.cmbNameBimeh.SelectedIndexChanged += new System.EventHandler(this.cmbNameBimeh_SelectedIndexChanged);
             // 
             // cmbGender
@@ -463,7 +447,7 @@
             this.btnSearch.BackColor = System.Drawing.Color.Transparent;
             this.btnSearch.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat;
             this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
+            this.btnSearch.Image = global::Matab.Properties.Resources.icons8_search_32;
             this.btnSearch.Location = new System.Drawing.Point(383, 1);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(35, 32);
@@ -486,7 +470,7 @@
             this.txtNoskhe.PreventEnterBeep = true;
             this.txtNoskhe.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtNoskhe.Size = new System.Drawing.Size(599, 102);
-            this.txtNoskhe.TabIndex = 11;
+            this.txtNoskhe.TabIndex = 13;
             // 
             // txtBimari_Ghabli
             // 
@@ -500,7 +484,7 @@
             this.txtBimari_Ghabli.Name = "txtBimari_Ghabli";
             this.txtBimari_Ghabli.PreventEnterBeep = true;
             this.txtBimari_Ghabli.Size = new System.Drawing.Size(598, 32);
-            this.txtBimari_Ghabli.TabIndex = 9;
+            this.txtBimari_Ghabli.TabIndex = 11;
             // 
             // txtBimari_Feeli
             // 
@@ -514,7 +498,21 @@
             this.txtBimari_Feeli.Name = "txtBimari_Feeli";
             this.txtBimari_Feeli.PreventEnterBeep = true;
             this.txtBimari_Feeli.Size = new System.Drawing.Size(599, 32);
-            this.txtBimari_Feeli.TabIndex = 10;
+            this.txtBimari_Feeli.TabIndex = 12;
+            // 
+            // txtTarefe
+            // 
+            // 
+            // 
+            // 
+            this.txtTarefe.Border.Class = "TextBoxBorder";
+            this.txtTarefe.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtTarefe.Location = new System.Drawing.Point(4, 153);
+            this.txtTarefe.Name = "txtTarefe";
+            this.txtTarefe.PreventEnterBeep = true;
+            this.txtTarefe.ReadOnly = true;
+            this.txtTarefe.Size = new System.Drawing.Size(241, 32);
+            this.txtTarefe.TabIndex = 10;
             // 
             // txtLName
             // 
@@ -651,7 +649,6 @@
             this.groupPanel3.ResumeLayout(false);
             this.groupPanel2.ResumeLayout(false);
             this.groupPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTarefe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCodeParvandeh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
@@ -689,12 +686,12 @@
         private System.Windows.Forms.Label label11;
         private DevComponents.DotNetBar.Controls.MaskedTextBoxAdv mskT_Feeli;
         private System.Windows.Forms.Label label10;
-        private DevComponents.Editors.IntegerInput txtTarefe;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private DevComponents.Editors.ComboItem M;
         private DevComponents.Editors.ComboItem F;
         private DevComponents.DotNetBar.Controls.ComboBoxEx cmbNameBimeh;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtTarefe;
     }
 }

@@ -48,8 +48,8 @@
             this.btnSave = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.txtTarefe = new DevComponents.Editors.IntegerInput();
-            this.txtCode = new DevComponents.Editors.IntegerInput();
             this.txtTozihat = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtCode = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtName = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -62,7 +62,6 @@
             this.groupPanel3.SuspendLayout();
             this.groupPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtTarefe)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -338,8 +337,8 @@
             this.groupPanel2.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel2.Controls.Add(this.txtTarefe);
-            this.groupPanel2.Controls.Add(this.txtCode);
             this.groupPanel2.Controls.Add(this.txtTozihat);
+            this.groupPanel2.Controls.Add(this.txtCode);
             this.groupPanel2.Controls.Add(this.txtName);
             this.groupPanel2.Controls.Add(this.label6);
             this.groupPanel2.Controls.Add(this.label3);
@@ -394,23 +393,7 @@
             this.txtTarefe.MinValue = 0;
             this.txtTarefe.Name = "txtTarefe";
             this.txtTarefe.Size = new System.Drawing.Size(326, 32);
-            this.txtTarefe.TabIndex = 3;
-            // 
-            // txtCode
-            // 
-            // 
-            // 
-            // 
-            this.txtCode.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.txtCode.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtCode.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.txtCode.DisplayFormat = "N0";
-            this.txtCode.FocusHighlightEnabled = true;
-            this.txtCode.Location = new System.Drawing.Point(82, 2);
-            this.txtCode.MinValue = 0;
-            this.txtCode.Name = "txtCode";
-            this.txtCode.Size = new System.Drawing.Size(326, 32);
-            this.txtCode.TabIndex = 0;
+            this.txtTarefe.TabIndex = 2;
             // 
             // txtTozihat
             // 
@@ -426,7 +409,21 @@
             this.txtTozihat.PreventEnterBeep = true;
             this.txtTozihat.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtTozihat.Size = new System.Drawing.Size(326, 108);
-            this.txtTozihat.TabIndex = 4;
+            this.txtTozihat.TabIndex = 3;
+            // 
+            // txtCode
+            // 
+            // 
+            // 
+            // 
+            this.txtCode.Border.Class = "TextBoxBorder";
+            this.txtCode.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtCode.Location = new System.Drawing.Point(82, 4);
+            this.txtCode.Name = "txtCode";
+            this.txtCode.PreventEnterBeep = true;
+            this.txtCode.ReadOnly = true;
+            this.txtCode.Size = new System.Drawing.Size(326, 32);
+            this.txtCode.TabIndex = 0;
             // 
             // txtName
             // 
@@ -440,7 +437,7 @@
             this.txtName.Name = "txtName";
             this.txtName.PreventEnterBeep = true;
             this.txtName.Size = new System.Drawing.Size(326, 32);
-            this.txtName.TabIndex = 2;
+            this.txtName.TabIndex = 1;
             // 
             // label6
             // 
@@ -512,7 +509,6 @@
             this.groupPanel2.ResumeLayout(false);
             this.groupPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtTarefe)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCode)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
@@ -532,7 +528,6 @@
         private DevComponents.DotNetBar.ButtonX btnDelete;
         private DevComponents.DotNetBar.ButtonX btnSave;
         private DevComponents.Editors.IntegerInput txtTarefe;
-        private DevComponents.Editors.IntegerInput txtCode;
         private System.Windows.Forms.Label label3;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel4;
         private DevComponents.DotNetBar.Controls.DataGridViewX dgvKhadamt;
@@ -542,5 +537,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn MablaghTarefe;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tozihat;
         private DevComponents.DotNetBar.ButtonX btnPrint;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtCode;
     }
 }

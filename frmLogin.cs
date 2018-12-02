@@ -19,14 +19,14 @@ namespace Matab
             query.OpenConection();
             try
             {
-                if (cmbAccess.SelectedItem == "مدیر")
+                if (cmbAccess.SelectedItem == "پزشک")
                 {
                     struser = "admin";
-                    clc_variable.strU = "مدیر";
+                    clc_variable.strU = "پزشک";
                 }
                 else
                 {
-                    clc_variable.strU = "کاربر عادی";
+                    clc_variable.strU = "منشی";
                     struser = "user";
                 }
                 int i = 0;//check kardane mojod bodan Username
@@ -34,7 +34,6 @@ namespace Matab
                 i = (int)q.ExecuteScalar();//chon dar database taghiri eijad nemishe
                 if (i > 0)
                 {
-                    new frmMain().ShowDialog();
                     this.Close();
                 }
                 else

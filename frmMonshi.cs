@@ -11,7 +11,7 @@ namespace Matab
         public frmMonshi()
         {
             InitializeComponent();
-       
+
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -19,9 +19,21 @@ namespace Matab
             query.OpenConection();
             try
             {
-                if (txtHoghogh.Text == "")
+                if (txtLName.Text == "" )
+                {
+                    errorProvider1.SetError(txtLName, "نام خانوادگی وارد نشده است");
+                    txtLName.Focus();
+                  
+                }
+                else if (txtTel.Text == "")
+                {
+                    errorProvider1.SetError(txtTel, "شماره تلفن وارد نشده است");
+                    txtTel.Focus();
+                }
+                else if (txtHoghogh.Text == "")
                 {
                     errorProvider1.SetError(txtHoghogh, "مبلغ حقوق وارد نشده است");
+                    txtHoghogh.Focus();
                 }
                 else
                 {
@@ -65,9 +77,16 @@ namespace Matab
             query.OpenConection();
             try
             {
-                query.ExecuteQueries("update tblMonshi set FName='" + txtFName.Text + "',LName='" + txtLName.Text + "',Tel='" + txtTel.Text + "',Hoghogh='" + txtHoghogh.Text + "',Tarikh='" + mskTarikh.Text + "',Tozihat='" + txtTozihat.Text + "' where ID=" + txtID.Text);
-                MessageBox.Show("عملیات با موفقیت انجام شد", "Matab", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                ClearControls.ClearTextBoxes(this);
+                if (txtID.Text == "")
+                {
+                    errorProvider1.SetError(txtID, "کد وارد نشده است");
+                }
+                else
+                {
+                    query.ExecuteQueries("update tblMonshi set FName='" + txtFName.Text + "',LName='" + txtLName.Text + "',Tel='" + txtTel.Text + "',Hoghogh='" + txtHoghogh.Text + "',Tarikh='" + mskTarikh.Text + "',Tozihat='" + txtTozihat.Text + "' where ID=" + txtID.Text);
+                    MessageBox.Show("عملیات با موفقیت انجام شد", "Matab", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ClearControls.ClearTextBoxes(this);
+                }
             }
             catch (Exception)
             {

@@ -11,6 +11,21 @@
     <AssemblyName>Matab</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -75,17 +90,47 @@
     <Compile Include="Class_ClearControls.cs" />
     <Compile Include="clc_variable.cs" />
     <Compile Include="Connection_Query.cs" />
+    <Compile Include="frmAmalKard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAmalKard.Designer.cs">
+      <DependentUpon>frmAmalKard.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBimeh.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmBimeh.Designer.cs">
       <DependentUpon>frmBimeh.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDataBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDataBase.Designer.cs">
+      <DependentUpon>frmDataBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGavahi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGavahi.Designer.cs">
+      <DependentUpon>frmGavahi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHazineh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHazineh.Designer.cs">
+      <DependentUpon>frmHazineh.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmKhadamat.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmKhadamat.Designer.cs">
       <DependentUpon>frmKhadamat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListHazineh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListHazineh.Designer.cs">
+      <DependentUpon>frmListHazineh.cs</DependentUpon>
     </Compile>
     <Compile Include="frmListMonshi.cs">
       <SubType>Form</SubType>
@@ -167,11 +212,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAmalKard.resx">
+      <DependentUpon>frmAmalKard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBimeh.resx">
       <DependentUpon>frmBimeh.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDataBase.resx">
+      <DependentUpon>frmDataBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGavahi.resx">
+      <DependentUpon>frmGavahi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHazineh.resx">
+      <DependentUpon>frmHazineh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmKhadamat.resx">
       <DependentUpon>frmKhadamat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListHazineh.resx">
+      <DependentUpon>frmListHazineh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmListMonshi.resx">
       <DependentUpon>frmListMonshi.cs</DependentUpon>
@@ -258,6 +318,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icons_clinic.ico" />
+    <None Include="Resources\icons8-search-32.png" />
+    <None Include="Resources\icons8-database-administrator-40.png" />
+    <None Include="Resources\icons8-bill-40.png" />
+    <None Include="Resources\icons8-us-dollar-40.png" />
+    <None Include="Resources\icons8-contract-40.png" />
+    <None Include="Resources\icons8-chart-40 %282%29.png" />
     <None Include="Resources\icons8-static-views-40.png" />
     <None Include="Resources\icons8-resume-40.png" />
     <None Include="Resources\icons8-stethoscope-40%281%29.png" />
@@ -272,6 +338,18 @@
     <None Include="Resources\icons8-print-32.png" />
     <None Include="Resources\icons8-cash-register-32.png" />
     <None Include="Resources\icons8-technical-support-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

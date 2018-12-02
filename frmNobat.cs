@@ -18,37 +18,27 @@ namespace Matab
             query.OpenConection();
             try
             {
-                if (txtNobat.Text == "" | mskTarikh.Text == "")
+                if (txtNobat.Text == "")
                 {
-                    errorProvider1.SetError(txtNobat, "شماره نوبت و یا تاریخ وارد نشده است");
+                    errorProvider1.SetError(txtNobat, "شماره نوبت وارد نشده است");
+                    txtNobat.Focus();
+                }
+                else if (txtLName.Text == "")
+                {
+                    errorProvider1.SetError(txtLName, "نام خانوادگی وارد نشده است");
+                    txtLName.Focus();
+                }
+                else if (mskTarikh.Text == "")
+                {
+                    errorProvider1.SetError(mskTarikh, "تریخ وارد وارد نشده است");
+                    mskTarikh.Focus();
                 }
                 else
                 {
                     query.ExecuteQueries(string.Format("insert into tblNobat values('{0}','{1}','{2}','{3}','{4}','{5}')", txtNobat.Text, mskTarikh.Text, txtFName.Text, txtLName.Text, txtTel.Text, txtTozihat.Text));
-                    MessageBox.Show("عملیات با موفقیت انجام شد", "Matab", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    ClearControls.ClearTextBoxes(this);
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("در هنگام اتصال به بانک اطلاعاتی خطایی رخ داده است ، مجددا تلاش کنید", "Matab", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            query.CloseConnection();
-        }
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            query.OpenConection();
-            try
-            {
-                if (txtNobat.Text == "")
-                {
-                    errorProvider1.SetError(txtNobat, "شماره نوبت وارد نشده است");
-                }
-                else
-                {
-                    query.ExecuteQueries("delete from tblNobat where Nobat=" + txtNobat.Text);
-                    MessageBox.Show("عملیات با موفقیت انجام شد", "Matab", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    var q = query.ExecuteScaler("SELECT MAX(Nobat) FROM tblNobat");
+                    string max = ((int)q.ExecuteScalar()).ToString();
+                    MessageBox.Show("شماره نوبت " + max + " برای این بیمار ثبت شد", "Matab", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ClearControls.ClearTextBoxes(this);
                 }
             }

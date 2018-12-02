@@ -18,9 +18,18 @@ namespace Matab
             query.OpenConection();
             try
             {
-                query.ExecuteQueries(string.Format("insert into tblSetting values ('{0}','{1}','{2}','{3}','{4}') ", txtNameMatab.Text, txtNameP.Text, txtTel.Text, txtMobile.Text, txtAddress.Text));
-                MessageBox.Show("عملیات با موفقیت انجام شد", "Matab", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                ClearControls.ClearTextBoxes(this);
+                if (txtNameMatab.Text == "" | txtNameP.Text == "")
+                {
+                    errorProvider1.SetError(txtNameMatab, "نام مطب را وارد کنید");
+                    txtNameMatab.Focus();
+                    errorProvider1.SetError(txtNameP, "نام پزشک را وارد کنید ");
+                }
+                else
+                {
+                    query.ExecuteQueries(string.Format("insert into tblSetting values ('{0}','{1}','{2}','{3}','{4}') ", txtNameMatab.Text, txtNameP.Text, txtTel.Text, txtMobile.Text, txtAddress.Text));
+                    MessageBox.Show("عملیات با موفقیت انجام شد", "Matab", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ClearControls.ClearTextBoxes(this);
+                }
             }
             catch (Exception)
             {
@@ -34,9 +43,17 @@ namespace Matab
             query.OpenConection();
             try
             {
-                query.ExecuteQueries("delete from tblSetting where ID=" + txtID.Text);
-                MessageBox.Show("عملیات با موفقیت انجام شد", "Matab", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                ClearControls.ClearTextBoxes(this);
+                if (txtID.Text == "")
+                {
+                    errorProvider1.SetError(txtID, "کد را وارد کنید");
+                    txtID.Focus();
+                }
+                else
+                {
+                    query.ExecuteQueries("delete from tblSetting where ID=" + txtID.Text);
+                    MessageBox.Show("عملیات با موفقیت انجام شد", "Matab", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ClearControls.ClearTextBoxes(this);
+                }
             }
             catch (Exception)
             {
@@ -50,9 +67,17 @@ namespace Matab
             query.OpenConection();
             try
             {
-                query.ExecuteQueries("update tblSetting set NameMatab='" + txtNameMatab.Text + "',NamePezeshk='" + txtNameP.Text + "',Tel='" + txtTel.Text + "',Mobile='" + txtMobile.Text + "',Address='" + txtAddress.Text + "' where ID=" + txtID.Text);
-                MessageBox.Show("عملیات با موفقیت انجام شد", "Matab", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                ClearControls.ClearTextBoxes(this);
+                if (txtID.Text == "")
+                {
+                    errorProvider1.SetError(txtID, "کد را وارد کنید");
+                    txtID.Focus();
+                }
+                else
+                {
+                    query.ExecuteQueries("update tblSetting set NameMatab='" + txtNameMatab.Text + "',NamePezeshk='" + txtNameP.Text + "',Tel='" + txtTel.Text + "',Mobile='" + txtMobile.Text + "',Address='" + txtAddress.Text + "' where ID=" + txtID.Text);
+                    MessageBox.Show("عملیات با موفقیت انجام شد", "Matab", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ClearControls.ClearTextBoxes(this);
+                }
             }
             catch (Exception)
             {

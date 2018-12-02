@@ -12,8 +12,20 @@ namespace Matab
         {
             InitializeComponent();
         }
-
         void Display()
+        {
+            query.OpenConection();
+            try
+            {
+                dgvListVisit.DataSource = query.ShowData("select * from tblVisit");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("در هنگام اتصال به بانک اطلاعاتی خطایی رخ داده است ، مجددا تلاش کنید", "Matab", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            query.CloseConnection();
+        }
+        void Search()
         {
             query.OpenConection();
             try
@@ -36,12 +48,12 @@ namespace Matab
 
         private void mskAzTarikh_TextChanged(object sender, EventArgs e)
         {
-            Display();
+            Search();
         }
 
         private void mskTaTarikh_TextChanged(object sender, EventArgs e)
         {
-            Display();
+            Search();
         }
 
         private void txtLName_TextChanged(object sender, EventArgs e)
@@ -63,7 +75,7 @@ namespace Matab
 
             try
             {
-                Display();
+                Search();
                 int sum = 0;
                 for (int i = 0; i < dgvListVisit.Rows.Count; i++)
                 {
@@ -102,6 +114,24 @@ namespace Matab
             {
                 MessageBox.Show("در هنگام گزارش گیری خطایی رخ داده است ، مجددا تلاش کنید", "Matab", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            query.OpenConection();
+            try
+            {
+                int x = Convert.ToInt32(dgvListVisit.SelectedCells[0].Value);
+                query.ExecuteQueries("delete from tblVisit where ID=" + x);
+                MessageBox.Show("عملیات با موفقیت انجام شد", "Matab", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Search();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("در هنگام اتصال به بانک اطلاعاتی خطایی رخ داده است ، مجددا تلاش کنید", "Matab", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            query.CloseConnection();
+            
         }
     }
 }

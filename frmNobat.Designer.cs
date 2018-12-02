@@ -33,7 +33,6 @@
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.btnEdit = new DevComponents.DotNetBar.ButtonX();
-            this.btnDelete = new DevComponents.DotNetBar.ButtonX();
             this.btnSave = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.txtNobat = new DevComponents.Editors.IntegerInput();
@@ -103,7 +102,6 @@
             this.groupPanel3.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel3.Controls.Add(this.btnEdit);
-            this.groupPanel3.Controls.Add(this.btnDelete);
             this.groupPanel3.Controls.Add(this.btnSave);
             this.groupPanel3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupPanel3.DisabledBackColor = System.Drawing.Color.Empty;
@@ -147,7 +145,7 @@
             this.btnEdit.BackColor = System.Drawing.Color.Transparent;
             this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEdit.Image = global::Matab.Properties.Resources.icons8_edit_file_32;
-            this.btnEdit.Location = new System.Drawing.Point(6, 1);
+            this.btnEdit.Location = new System.Drawing.Point(71, 1);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
             this.btnEdit.Size = new System.Drawing.Size(131, 38);
@@ -156,28 +154,13 @@
             this.btnEdit.Text = "ویرایش";
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
-            // btnDelete
-            // 
-            this.btnDelete.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnDelete.BackColor = System.Drawing.Color.Transparent;
-            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDelete.Image = global::Matab.Properties.Resources.icons8_trash_32;
-            this.btnDelete.Location = new System.Drawing.Point(145, 1);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
-            this.btnDelete.Size = new System.Drawing.Size(131, 38);
-            this.btnDelete.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnDelete.TabIndex = 1;
-            this.btnDelete.Text = "حذف";
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
             // btnSave
             // 
             this.btnSave.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnSave.BackColor = System.Drawing.Color.Transparent;
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.Image = global::Matab.Properties.Resources.icons8_save_32;
-            this.btnSave.Location = new System.Drawing.Point(284, 1);
+            this.btnSave.Location = new System.Drawing.Point(218, 1);
             this.btnSave.Name = "btnSave";
             this.btnSave.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
             this.btnSave.Size = new System.Drawing.Size(131, 38);
@@ -247,9 +230,8 @@
             this.txtNobat.BackgroundStyle.Class = "DateTimeInputBackground";
             this.txtNobat.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtNobat.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.txtNobat.DisplayFormat = "N0";
             this.txtNobat.FocusHighlightEnabled = true;
-            this.txtNobat.Location = new System.Drawing.Point(41, 7);
+            this.txtNobat.Location = new System.Drawing.Point(57, 4);
             this.txtNobat.MinValue = 0;
             this.txtNobat.Name = "txtNobat";
             this.txtNobat.Size = new System.Drawing.Size(258, 32);
@@ -265,7 +247,7 @@
             this.mskTarikh.ButtonClear.SymbolColor = System.Drawing.Color.Red;
             this.mskTarikh.ButtonClear.Visible = true;
             this.mskTarikh.FocusHighlightEnabled = true;
-            this.mskTarikh.Location = new System.Drawing.Point(0, 45);
+            this.mskTarikh.Location = new System.Drawing.Point(16, 42);
             this.mskTarikh.Mask = "####/##/##";
             this.mskTarikh.Name = "mskTarikh";
             this.mskTarikh.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -280,8 +262,8 @@
             this.btnSearch.BackColor = System.Drawing.Color.Transparent;
             this.btnSearch.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat;
             this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
-            this.btnSearch.Location = new System.Drawing.Point(0, 7);
+            this.btnSearch.Image = global::Matab.Properties.Resources.icons8_search_32;
+            this.btnSearch.Location = new System.Drawing.Point(15, 4);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(35, 32);
             this.btnSearch.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -297,7 +279,7 @@
             this.txtTozihat.Border.Class = "TextBoxBorder";
             this.txtTozihat.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtTozihat.FocusHighlightEnabled = true;
-            this.txtTozihat.Location = new System.Drawing.Point(0, 196);
+            this.txtTozihat.Location = new System.Drawing.Point(16, 193);
             this.txtTozihat.Multiline = true;
             this.txtTozihat.Name = "txtTozihat";
             this.txtTozihat.PreventEnterBeep = true;
@@ -313,7 +295,7 @@
             this.txtTel.Border.Class = "TextBoxBorder";
             this.txtTel.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtTel.FocusHighlightEnabled = true;
-            this.txtTel.Location = new System.Drawing.Point(0, 158);
+            this.txtTel.Location = new System.Drawing.Point(16, 155);
             this.txtTel.Name = "txtTel";
             this.txtTel.PreventEnterBeep = true;
             this.txtTel.Size = new System.Drawing.Size(299, 32);
@@ -327,7 +309,7 @@
             this.txtLName.Border.Class = "TextBoxBorder";
             this.txtLName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtLName.FocusHighlightEnabled = true;
-            this.txtLName.Location = new System.Drawing.Point(0, 120);
+            this.txtLName.Location = new System.Drawing.Point(16, 117);
             this.txtLName.Name = "txtLName";
             this.txtLName.PreventEnterBeep = true;
             this.txtLName.Size = new System.Drawing.Size(299, 32);
@@ -341,7 +323,7 @@
             this.txtFName.Border.Class = "TextBoxBorder";
             this.txtFName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtFName.FocusHighlightEnabled = true;
-            this.txtFName.Location = new System.Drawing.Point(0, 82);
+            this.txtFName.Location = new System.Drawing.Point(16, 79);
             this.txtFName.Name = "txtFName";
             this.txtFName.PreventEnterBeep = true;
             this.txtFName.Size = new System.Drawing.Size(299, 32);
@@ -351,7 +333,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(305, 198);
+            this.label6.Location = new System.Drawing.Point(321, 195);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(68, 26);
             this.label6.TabIndex = 0;
@@ -361,7 +343,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(305, 122);
+            this.label5.Location = new System.Drawing.Point(321, 119);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(84, 26);
             this.label5.TabIndex = 0;
@@ -371,7 +353,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(305, 160);
+            this.label4.Location = new System.Drawing.Point(321, 157);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 26);
             this.label4.TabIndex = 0;
@@ -381,7 +363,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(305, 84);
+            this.label3.Location = new System.Drawing.Point(321, 81);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(27, 26);
             this.label3.TabIndex = 0;
@@ -391,7 +373,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(305, 48);
+            this.label2.Location = new System.Drawing.Point(321, 45);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(42, 26);
             this.label2.TabIndex = 0;
@@ -401,7 +383,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(305, 12);
+            this.label1.Location = new System.Drawing.Point(321, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 26);
             this.label1.TabIndex = 0;
@@ -454,7 +436,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private DevComponents.DotNetBar.ButtonX btnEdit;
-        private DevComponents.DotNetBar.ButtonX btnDelete;
         private DevComponents.DotNetBar.ButtonX btnSave;
         private DevComponents.DotNetBar.ButtonX btnSearch;
         private DevComponents.DotNetBar.Controls.MaskedTextBoxAdv mskTarikh;

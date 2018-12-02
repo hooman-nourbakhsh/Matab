@@ -27,8 +27,13 @@ D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\bin\Debug\Stimulsof
 D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\bin\Debug\Stimulsoft.Controls.Win.pdb
 D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\bin\Debug\Stimulsoft.Report.pdb
 D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\bin\Debug\Stimulsoft.Report.Win.pdb
+D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\obj\Debug\Matab.frmAmalKard.resources
 D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\obj\Debug\Matab.frmBimeh.resources
+D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\obj\Debug\Matab.frmDataBase.resources
+D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\obj\Debug\Matab.frmGavahi.resources
+D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\obj\Debug\Matab.frmHazineh.resources
 D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\obj\Debug\Matab.frmKhadamat.resources
+D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\obj\Debug\Matab.frmListHazineh.resources
 D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\obj\Debug\Matab.frmListMonshi.resources
 D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\obj\Debug\Matab.frmListNobat.resources
 D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\obj\Debug\Matab.frmListPardakht.resources
@@ -46,3 +51,4 @@ D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\obj\Debug\Matab.Pro
 D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\obj\Debug\Matab.csproj.GenerateResource.Cache
 D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\obj\Debug\Matab.exe
 D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\obj\Debug\Matab.pdb
+D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\obj\Debug\Matab.csprojResolveAssemblyReference.cache

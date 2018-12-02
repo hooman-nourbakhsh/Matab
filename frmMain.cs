@@ -1,29 +1,44 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Connection_Class;
+using System;
 using System.Windows.Forms;
 
 namespace Matab
 {
     public partial class frmMain : DevComponents.DotNetBar.OfficeForm
     {
+        Connection_Query query = new Connection_Query();
         public frmMain()
         {
             InitializeComponent();
+            this.dgvListNobat.BackgroundColor = System.Drawing.Color.White;
+        }
+        void Display()
+        {
+            query.OpenConection();
+            try
+            {
+                dgvListNobat.DataSource = query.ShowData("select * from tblNobat");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("در هنگام اتصال به بانک اطلاعاتی خطایی رخ داده است ، مجددا تلاش کنید", "Matab", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            query.CloseConnection();
         }
         private void frmMain_Load(object sender, EventArgs e)
         {
-
+            new frmLogin().ShowDialog();
+            Display();
             lblUser.Text = clc_variable.strU;
-            if (lblUser.Text == "کاربر عادی")
+            if (lblUser.Text == "منشی")
             {
                 btnUsers.Enabled = false;
                 btnSetting.Enabled = false;
+                btnMonshi.Enabled = false;
+                btnHoghogh.Enabled = false;
+                btnListPardakht.Enabled = false;
+                btnAmalKard.Enabled = false;
+                btnDataBase.Enabled = false;
             }
 
             //***********************************************************************
@@ -122,6 +137,41 @@ namespace Matab
         private void btnListParvandeh_Click(object sender, EventArgs e)
         {
             new frmListParvandeh().ShowDialog();
+        }
+
+        private void btnAmalKard_Click(object sender, EventArgs e)
+        {
+            new frmAmalKard().ShowDialog();
+        }
+
+        private void btnGavahi_Click(object sender, EventArgs e)
+        {
+            new frmGavahi().ShowDialog();
+        }
+
+        private void btnHazineh_Click(object sender, EventArgs e)
+        {
+            new frmHazineh().ShowDialog();
+        }
+
+        private void btnListHazineh_Click(object sender, EventArgs e)
+        {
+            new frmListHazineh().ShowDialog();
+        }
+
+        private void txtLName_TextChanged(object sender, EventArgs e)
+        {
+            dgvListNobat.DataSource = query.ShowData(string.Format("select * from tblNobat where LNameBimar like '%' + '{0}' + '%' ", txtLName.Text));
+        }
+
+        private void txtNobat_TextChanged(object sender, EventArgs e)
+        {
+            dgvListNobat.DataSource = query.ShowData(string.Format("select * from tblNobat where Nobat like '%' + '{0}' + '%' ", txtNobat.Text));
+        }
+
+        private void btnDataBase_Click(object sender, EventArgs e)
+        {
+            new frmDataBase().ShowDialog();
         }
     }
 }

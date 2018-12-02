@@ -88,7 +88,7 @@
             </Text8>
             <Text9 Ref="9" type="Text" isKey="true">
               <Brush>[255:255:192]</Brush>
-              <ClientRectangle>1.9,0.53,1,0.3</ClientRectangle>
+              <ClientRectangle>2.1,0.53,0.8,0.3</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>IRANSans,11</Font>
               <Guid>054dd6c3609842259b1b2f9d887526b1</Guid>
@@ -105,7 +105,7 @@
             </Text9>
             <Text11 Ref="10" type="Text" isKey="true">
               <Brush>[255:255:192]</Brush>
-              <ClientRectangle>0.1,0.53,1.7,0.3</ClientRectangle>
+              <ClientRectangle>0.1,0.53,1.9,0.3</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>IRANSans,11</Font>
               <Guid>885fd2b371594ad3b865197750917664</Guid>
@@ -233,6 +233,7 @@
         </PageFooterBand1>
         <DataBand1 Ref="24" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
           <ClientRectangle>0,1.48,5.05,0.3</ClientRectangle>
           <Components isList="true" count="4">
             <Text15 Ref="25" type="Text" isKey="true">
@@ -254,7 +255,7 @@
             </Text15>
             <Text17 Ref="26" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>1.9,0,1,0.3</ClientRectangle>
+              <ClientRectangle>2.1,0,0.8,0.3</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>IRANSans,10</Font>
               <Guid>8d85acb32179487f9300793ac2006b2c</Guid>
@@ -276,11 +277,10 @@
             </Text17>
             <Text18 Ref="28" type="Text" isKey="true">
               <Brush>Transparent</Brush>
-              <ClientRectangle>0.1,0,1.7,0.3</ClientRectangle>
+              <ClientRectangle>0.1,0,1.9,0.3</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Font>IRANSans,8</Font>
               <Guid>95bfded09aed44db9ab9eb33442809c0</Guid>
-              <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text18</Name>
               <Page isRef="4" />
@@ -347,10 +347,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>11/26/2018 10:29:02 PM</ReportChanged>
+  <ReportChanged>12/2/2018 9:44:41 PM</ReportChanged>
   <ReportCreated>11/20/2018 7:51:08 PM</ReportCreated>
   <ReportFile>D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\bin\Debug\Reports\rptBimeh.mrt</ReportFile>
-  <ReportGuid>795579b39cef4237a99d2e1a6f822d4e</ReportGuid>
+  <ReportGuid>6050700210544363ad30f6fde98df8ce</ReportGuid>
   <ReportName>Report</ReportName>
   <ReportUnit>Inches</ReportUnit>
   <ReportVersion>2015.1.0</ReportVersion>

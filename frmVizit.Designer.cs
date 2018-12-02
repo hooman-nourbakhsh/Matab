@@ -33,14 +33,11 @@
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.btnEdit = new DevComponents.DotNetBar.ButtonX();
-            this.btnDelete = new DevComponents.DotNetBar.ButtonX();
             this.btnSave = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.btnReload = new DevComponents.DotNetBar.ButtonX();
-            this.txtTarefeKhadamat = new DevComponents.Editors.IntegerInput();
             this.txtMablaghKol = new DevComponents.Editors.IntegerInput();
             this.txtCodeKhadamat = new DevComponents.Editors.IntegerInput();
-            this.txtTarefeBime = new DevComponents.Editors.IntegerInput();
             this.txtCodeBime = new DevComponents.Editors.IntegerInput();
             this.txtCodeVisit = new DevComponents.Editors.IntegerInput();
             this.btnSearchKhadamat = new DevComponents.DotNetBar.ButtonX();
@@ -49,6 +46,8 @@
             this.btnSearchBime = new DevComponents.DotNetBar.ButtonX();
             this.txtNameKhadamat = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtNoskhe = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtTarefeKhadamat = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtTarefeBime = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtNameBime = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtLName = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtFName = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -68,10 +67,8 @@
             this.groupPanel1.SuspendLayout();
             this.groupPanel3.SuspendLayout();
             this.groupPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTarefeKhadamat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMablaghKol)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCodeKhadamat)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTarefeBime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCodeBime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCodeVisit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -123,7 +120,6 @@
             this.groupPanel3.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel3.Controls.Add(this.btnEdit);
-            this.groupPanel3.Controls.Add(this.btnDelete);
             this.groupPanel3.Controls.Add(this.btnSave);
             this.groupPanel3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupPanel3.DisabledBackColor = System.Drawing.Color.Empty;
@@ -167,7 +163,7 @@
             this.btnEdit.BackColor = System.Drawing.Color.Transparent;
             this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEdit.Image = global::Matab.Properties.Resources.icons8_edit_file_32;
-            this.btnEdit.Location = new System.Drawing.Point(177, 1);
+            this.btnEdit.Location = new System.Drawing.Point(247, 1);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
             this.btnEdit.Size = new System.Drawing.Size(131, 38);
@@ -176,28 +172,13 @@
             this.btnEdit.Text = "ویرایش";
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
-            // btnDelete
-            // 
-            this.btnDelete.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnDelete.BackColor = System.Drawing.Color.Transparent;
-            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDelete.Image = global::Matab.Properties.Resources.icons8_trash_32;
-            this.btnDelete.Location = new System.Drawing.Point(316, 1);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
-            this.btnDelete.Size = new System.Drawing.Size(131, 38);
-            this.btnDelete.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnDelete.TabIndex = 1;
-            this.btnDelete.Text = "حذف";
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
             // btnSave
             // 
             this.btnSave.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnSave.BackColor = System.Drawing.Color.Transparent;
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.Image = global::Matab.Properties.Resources.icons8_save_32;
-            this.btnSave.Location = new System.Drawing.Point(455, 1);
+            this.btnSave.Location = new System.Drawing.Point(384, 1);
             this.btnSave.Name = "btnSave";
             this.btnSave.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2, 10, 10, 2);
             this.btnSave.Size = new System.Drawing.Size(131, 38);
@@ -211,10 +192,8 @@
             this.groupPanel2.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel2.Controls.Add(this.btnReload);
-            this.groupPanel2.Controls.Add(this.txtTarefeKhadamat);
             this.groupPanel2.Controls.Add(this.txtMablaghKol);
             this.groupPanel2.Controls.Add(this.txtCodeKhadamat);
-            this.groupPanel2.Controls.Add(this.txtTarefeBime);
             this.groupPanel2.Controls.Add(this.txtCodeBime);
             this.groupPanel2.Controls.Add(this.txtCodeVisit);
             this.groupPanel2.Controls.Add(this.btnSearchKhadamat);
@@ -223,6 +202,8 @@
             this.groupPanel2.Controls.Add(this.btnSearchBime);
             this.groupPanel2.Controls.Add(this.txtNameKhadamat);
             this.groupPanel2.Controls.Add(this.txtNoskhe);
+            this.groupPanel2.Controls.Add(this.txtTarefeKhadamat);
+            this.groupPanel2.Controls.Add(this.txtTarefeBime);
             this.groupPanel2.Controls.Add(this.txtNameBime);
             this.groupPanel2.Controls.Add(this.txtLName);
             this.groupPanel2.Controls.Add(this.txtFName);
@@ -283,24 +264,9 @@
             this.btnReload.Name = "btnReload";
             this.btnReload.Size = new System.Drawing.Size(131, 35);
             this.btnReload.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnReload.TabIndex = 14;
+            this.btnReload.TabIndex = 13;
             this.btnReload.Text = "محاسبه قیمت";
             this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
-            // 
-            // txtTarefeKhadamat
-            // 
-            // 
-            // 
-            // 
-            this.txtTarefeKhadamat.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.txtTarefeKhadamat.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtTarefeKhadamat.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.txtTarefeKhadamat.FocusHighlightEnabled = true;
-            this.txtTarefeKhadamat.Location = new System.Drawing.Point(19, 116);
-            this.txtTarefeKhadamat.MinValue = 0;
-            this.txtTarefeKhadamat.Name = "txtTarefeKhadamat";
-            this.txtTarefeKhadamat.Size = new System.Drawing.Size(119, 32);
-            this.txtTarefeKhadamat.TabIndex = 12;
             // 
             // txtMablaghKol
             // 
@@ -318,7 +284,7 @@
             this.txtMablaghKol.MinValue = 0;
             this.txtMablaghKol.Name = "txtMablaghKol";
             this.txtMablaghKol.Size = new System.Drawing.Size(230, 32);
-            this.txtMablaghKol.TabIndex = 13;
+            this.txtMablaghKol.TabIndex = 14;
             // 
             // txtCodeKhadamat
             // 
@@ -334,21 +300,6 @@
             this.txtCodeKhadamat.Name = "txtCodeKhadamat";
             this.txtCodeKhadamat.Size = new System.Drawing.Size(62, 32);
             this.txtCodeKhadamat.TabIndex = 9;
-            // 
-            // txtTarefeBime
-            // 
-            // 
-            // 
-            // 
-            this.txtTarefeBime.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.txtTarefeBime.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtTarefeBime.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.txtTarefeBime.FocusHighlightEnabled = true;
-            this.txtTarefeBime.Location = new System.Drawing.Point(19, 78);
-            this.txtTarefeBime.MinValue = 0;
-            this.txtTarefeBime.Name = "txtTarefeBime";
-            this.txtTarefeBime.Size = new System.Drawing.Size(119, 32);
-            this.txtTarefeBime.TabIndex = 8;
             // 
             // txtCodeBime
             // 
@@ -386,7 +337,7 @@
             this.btnSearchKhadamat.BackColor = System.Drawing.Color.Transparent;
             this.btnSearchKhadamat.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat;
             this.btnSearchKhadamat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearchKhadamat.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchKhadamat.Image")));
+            this.btnSearchKhadamat.Image = global::Matab.Properties.Resources.icons8_search_32;
             this.btnSearchKhadamat.Location = new System.Drawing.Point(498, 116);
             this.btnSearchKhadamat.Name = "btnSearchKhadamat";
             this.btnSearchKhadamat.Size = new System.Drawing.Size(35, 32);
@@ -419,7 +370,7 @@
             this.btnSearchVisit.BackColor = System.Drawing.Color.Transparent;
             this.btnSearchVisit.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat;
             this.btnSearchVisit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearchVisit.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchVisit.Image")));
+            this.btnSearchVisit.Image = global::Matab.Properties.Resources.icons8_search_32;
             this.btnSearchVisit.Location = new System.Drawing.Point(354, 3);
             this.btnSearchVisit.Name = "btnSearchVisit";
             this.btnSearchVisit.Size = new System.Drawing.Size(35, 32);
@@ -434,7 +385,7 @@
             this.btnSearchBime.BackColor = System.Drawing.Color.Transparent;
             this.btnSearchBime.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat;
             this.btnSearchBime.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearchBime.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchBime.Image")));
+            this.btnSearchBime.Image = global::Matab.Properties.Resources.icons8_search_32;
             this.btnSearchBime.Location = new System.Drawing.Point(498, 78);
             this.btnSearchBime.Name = "btnSearchBime";
             this.btnSearchBime.Size = new System.Drawing.Size(35, 32);
@@ -450,10 +401,10 @@
             // 
             this.txtNameKhadamat.Border.Class = "TextBoxBorder";
             this.txtNameKhadamat.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtNameKhadamat.FocusHighlightEnabled = true;
             this.txtNameKhadamat.Location = new System.Drawing.Point(238, 116);
             this.txtNameKhadamat.Name = "txtNameKhadamat";
             this.txtNameKhadamat.PreventEnterBeep = true;
+            this.txtNameKhadamat.ReadOnly = true;
             this.txtNameKhadamat.Size = new System.Drawing.Size(176, 32);
             this.txtNameKhadamat.TabIndex = 11;
             // 
@@ -473,6 +424,34 @@
             this.txtNoskhe.Size = new System.Drawing.Size(582, 108);
             this.txtNoskhe.TabIndex = 15;
             // 
+            // txtTarefeKhadamat
+            // 
+            // 
+            // 
+            // 
+            this.txtTarefeKhadamat.Border.Class = "TextBoxBorder";
+            this.txtTarefeKhadamat.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtTarefeKhadamat.Location = new System.Drawing.Point(19, 116);
+            this.txtTarefeKhadamat.Name = "txtTarefeKhadamat";
+            this.txtTarefeKhadamat.PreventEnterBeep = true;
+            this.txtTarefeKhadamat.ReadOnly = true;
+            this.txtTarefeKhadamat.Size = new System.Drawing.Size(119, 32);
+            this.txtTarefeKhadamat.TabIndex = 12;
+            // 
+            // txtTarefeBime
+            // 
+            // 
+            // 
+            // 
+            this.txtTarefeBime.Border.Class = "TextBoxBorder";
+            this.txtTarefeBime.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtTarefeBime.Location = new System.Drawing.Point(19, 78);
+            this.txtTarefeBime.Name = "txtTarefeBime";
+            this.txtTarefeBime.PreventEnterBeep = true;
+            this.txtTarefeBime.ReadOnly = true;
+            this.txtTarefeBime.Size = new System.Drawing.Size(119, 32);
+            this.txtTarefeBime.TabIndex = 8;
+            // 
             // txtNameBime
             // 
             // 
@@ -480,10 +459,10 @@
             // 
             this.txtNameBime.Border.Class = "TextBoxBorder";
             this.txtNameBime.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtNameBime.FocusHighlightEnabled = true;
             this.txtNameBime.Location = new System.Drawing.Point(221, 78);
             this.txtNameBime.Name = "txtNameBime";
             this.txtNameBime.PreventEnterBeep = true;
+            this.txtNameBime.ReadOnly = true;
             this.txtNameBime.Size = new System.Drawing.Size(210, 32);
             this.txtNameBime.TabIndex = 7;
             // 
@@ -664,10 +643,8 @@
             this.groupPanel3.ResumeLayout(false);
             this.groupPanel2.ResumeLayout(false);
             this.groupPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTarefeKhadamat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMablaghKol)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCodeKhadamat)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTarefeBime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCodeBime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCodeVisit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
@@ -691,15 +668,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private DevComponents.DotNetBar.ButtonX btnEdit;
-        private DevComponents.DotNetBar.ButtonX btnDelete;
         private DevComponents.DotNetBar.ButtonX btnSave;
         private DevComponents.DotNetBar.ButtonX btnSearchBime;
         private DevComponents.DotNetBar.Controls.MaskedTextBoxAdv mskTarikh;
         private System.Windows.Forms.Label label7;
-        private DevComponents.Editors.IntegerInput txtTarefeKhadamat;
         private DevComponents.Editors.IntegerInput txtMablaghKol;
         private DevComponents.Editors.IntegerInput txtCodeKhadamat;
-        private DevComponents.Editors.IntegerInput txtTarefeBime;
         private DevComponents.Editors.IntegerInput txtCodeBime;
         private DevComponents.Editors.IntegerInput txtCodeVisit;
         private DevComponents.DotNetBar.ButtonX btnSearchKhadamat;
@@ -712,5 +686,7 @@
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private DevComponents.DotNetBar.ButtonX btnSearchVisit;
         private DevComponents.DotNetBar.ButtonX btnReload;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtTarefeKhadamat;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtTarefeBime;
     }
 }

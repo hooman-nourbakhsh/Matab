@@ -233,6 +233,7 @@
         </PageFooterBand1>
         <DataBand1 Ref="24" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
           <ClientRectangle>0,1.48,5.05,0.3</ClientRectangle>
           <Components isList="true" count="4">
             <Text15 Ref="25" type="Text" isKey="true">
@@ -280,7 +281,6 @@
               <Conditions isList="true" count="0" />
               <Font>IRANSans,8</Font>
               <Guid>95bfded09aed44db9ab9eb33442809c0</Guid>
-              <HorAlignment>Center</HorAlignment>
               <Margins>0,0,0,0</Margins>
               <Name>Text18</Name>
               <Page isRef="4" />
@@ -347,10 +347,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>11/26/2018 9:32:02 PM</ReportChanged>
+  <ReportChanged>12/2/2018 9:45:08 PM</ReportChanged>
   <ReportCreated>11/20/2018 7:51:08 PM</ReportCreated>
   <ReportFile>D:\Projects\CSharp\Video Learning\FaraDars\Matab\Matab\Matab\bin\Debug\Reports\rptKhadamat.mrt</ReportFile>
-  <ReportGuid>08d59205a3654e81ac9e87c6f4bace46</ReportGuid>
+  <ReportGuid>123aa6d5b149456fa3bafd2de782738b</ReportGuid>
   <ReportName>Report</ReportName>
   <ReportUnit>Inches</ReportUnit>
   <ReportVersion>2015.1.0</ReportVersion>

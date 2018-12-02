@@ -182,8 +182,8 @@
             // 
             this.cmbAccess.FormattingEnabled = true;
             this.cmbAccess.Items.AddRange(new object[] {
-            "مدیر",
-            "کاربر"});
+            "پزشک",
+            "منشی"});
             this.cmbAccess.Location = new System.Drawing.Point(279, 124);
             this.cmbAccess.Name = "cmbAccess";
             this.cmbAccess.Size = new System.Drawing.Size(237, 34);
@@ -261,10 +261,11 @@
             this.EnableGlass = false;
             this.Font = new System.Drawing.Font("IRANSans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmLogin";
+            this.Text = "فرم ورود به سیستم نوبت دهی";
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel2.ResumeLayout(false);
             this.groupPanel2.PerformLayout();

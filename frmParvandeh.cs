@@ -23,12 +23,36 @@ namespace Matab
                     errorProvider1.SetError(txtCodeParvandeh, "شماره پرونده وارد نشده است");
                     txtCodeParvandeh.Focus();
                 }
+                else if (txtLName.Text == "")
+                {
+                    errorProvider1.SetError(txtLName, "نام خانوادگی وارد نشده است");
+                    txtLName.Focus();
+                }
+                else if (mskTarikhTavalod.Text == "")
+                {
+                    errorProvider1.SetError(mskTarikhTavalod, "تاریخ تولد وارد نشده است");
+                    mskTarikhTavalod.Focus();
+                }
+                else if (mskT_Baadi.Text == "")
+                {
+                    errorProvider1.SetError(mskT_Baadi, "تاریخ مراجعه بعدی وارد نشده است");
+                    mskT_Baadi.Focus();
+                }
+                else if (cmbNameBimeh.Text == "")
+                {
+                    errorProvider1.SetError(cmbNameBimeh, "نوع بیمه وارد نشده است");
+                    cmbNameBimeh.Focus();
+                }
+                else if (txtBimari_Feeli.Text == "")
+                {
+                    errorProvider1.SetError(txtBimari_Feeli, "بیماری فعلی وارد نشده است");
+                    txtBimari_Feeli.Focus();
+                }
                 else
                 {
                     query.ExecuteQueries(string.Format("insert into tblParvandeh values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}')", txtCodeParvandeh.Text, mskTarikh.Text, txtFName.Text, txtLName.Text, mskTarikhTavalod.Text, cmbGender.Text, mskT_Feeli.Text, mskT_Baadi.Text, cmbNameBimeh.Text, txtTarefe.Text, txtBimari_Ghabli.Text, txtBimari_Feeli.Text, txtNoskhe.Text));
                     MessageBox.Show("عملیات با موفقیت انجام شد", "Matab", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ClearControls.ClearTextBoxes(this);
-
                 }
             }
             catch (Exception)
@@ -43,7 +67,6 @@ namespace Matab
             query.OpenConection();
             try
             {
-
                 if (txtCodeParvandeh.Text == "")
                 {
                     errorProvider1.SetError(txtCodeParvandeh, "شماره پرونده وارد نشده است");

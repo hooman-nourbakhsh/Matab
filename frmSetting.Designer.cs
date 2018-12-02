@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSetting));
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
@@ -48,9 +49,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupPanel1.SuspendLayout();
             this.groupPanel3.SuspendLayout();
             this.groupPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupPanel1
@@ -63,7 +66,7 @@
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel1.Location = new System.Drawing.Point(0, 0);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(428, 372);
+            this.groupPanel1.Size = new System.Drawing.Size(445, 372);
             // 
             // 
             // 
@@ -106,7 +109,7 @@
             this.groupPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupPanel3.Location = new System.Drawing.Point(0, 320);
             this.groupPanel3.Name = "groupPanel3";
-            this.groupPanel3.Size = new System.Drawing.Size(422, 46);
+            this.groupPanel3.Size = new System.Drawing.Size(439, 46);
             // 
             // 
             // 
@@ -203,7 +206,7 @@
             this.groupPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupPanel2.Location = new System.Drawing.Point(0, 0);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(422, 318);
+            this.groupPanel2.Size = new System.Drawing.Size(439, 318);
             // 
             // 
             // 
@@ -240,8 +243,8 @@
             this.btnSearch.BackColor = System.Drawing.Color.Transparent;
             this.btnSearch.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat;
             this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
-            this.btnSearch.Location = new System.Drawing.Point(5, 5);
+            this.btnSearch.Image = global::Matab.Properties.Resources.icons8_search_32;
+            this.btnSearch.Location = new System.Drawing.Point(19, 5);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(35, 32);
             this.btnSearch.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -257,7 +260,7 @@
             this.txtAddress.Border.Class = "TextBoxBorder";
             this.txtAddress.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtAddress.FocusHighlightEnabled = true;
-            this.txtAddress.Location = new System.Drawing.Point(5, 200);
+            this.txtAddress.Location = new System.Drawing.Point(19, 200);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.PreventEnterBeep = true;
@@ -273,7 +276,7 @@
             this.txtMobile.Border.Class = "TextBoxBorder";
             this.txtMobile.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtMobile.FocusHighlightEnabled = true;
-            this.txtMobile.Location = new System.Drawing.Point(5, 161);
+            this.txtMobile.Location = new System.Drawing.Point(19, 161);
             this.txtMobile.Name = "txtMobile";
             this.txtMobile.PreventEnterBeep = true;
             this.txtMobile.Size = new System.Drawing.Size(331, 32);
@@ -287,7 +290,7 @@
             this.txtTel.Border.Class = "TextBoxBorder";
             this.txtTel.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtTel.FocusHighlightEnabled = true;
-            this.txtTel.Location = new System.Drawing.Point(5, 122);
+            this.txtTel.Location = new System.Drawing.Point(19, 122);
             this.txtTel.Name = "txtTel";
             this.txtTel.PreventEnterBeep = true;
             this.txtTel.Size = new System.Drawing.Size(331, 32);
@@ -301,7 +304,7 @@
             this.txtNameP.Border.Class = "TextBoxBorder";
             this.txtNameP.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtNameP.FocusHighlightEnabled = true;
-            this.txtNameP.Location = new System.Drawing.Point(5, 83);
+            this.txtNameP.Location = new System.Drawing.Point(19, 83);
             this.txtNameP.Name = "txtNameP";
             this.txtNameP.PreventEnterBeep = true;
             this.txtNameP.Size = new System.Drawing.Size(331, 32);
@@ -315,7 +318,7 @@
             this.txtNameMatab.Border.Class = "TextBoxBorder";
             this.txtNameMatab.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtNameMatab.FocusHighlightEnabled = true;
-            this.txtNameMatab.Location = new System.Drawing.Point(5, 44);
+            this.txtNameMatab.Location = new System.Drawing.Point(19, 44);
             this.txtNameMatab.Name = "txtNameMatab";
             this.txtNameMatab.PreventEnterBeep = true;
             this.txtNameMatab.Size = new System.Drawing.Size(331, 32);
@@ -329,7 +332,7 @@
             this.txtID.Border.Class = "TextBoxBorder";
             this.txtID.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtID.FocusHighlightEnabled = true;
-            this.txtID.Location = new System.Drawing.Point(46, 5);
+            this.txtID.Location = new System.Drawing.Point(60, 5);
             this.txtID.Name = "txtID";
             this.txtID.PreventEnterBeep = true;
             this.txtID.Size = new System.Drawing.Size(290, 32);
@@ -339,7 +342,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(344, 202);
+            this.label6.Location = new System.Drawing.Point(358, 202);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(45, 26);
             this.label6.TabIndex = 0;
@@ -349,7 +352,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(344, 163);
+            this.label5.Location = new System.Drawing.Point(358, 163);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(43, 26);
             this.label5.TabIndex = 0;
@@ -359,7 +362,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(344, 122);
+            this.label4.Location = new System.Drawing.Point(358, 122);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(38, 26);
             this.label4.TabIndex = 0;
@@ -369,7 +372,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(344, 85);
+            this.label3.Location = new System.Drawing.Point(358, 85);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 26);
             this.label3.TabIndex = 0;
@@ -379,7 +382,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(344, 46);
+            this.label2.Location = new System.Drawing.Point(358, 46);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 26);
             this.label2.TabIndex = 0;
@@ -389,17 +392,22 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(344, 7);
+            this.label1.Location = new System.Drawing.Point(358, 7);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(26, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "کد";
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            this.errorProvider1.RightToLeft = true;
+            // 
             // frmSetting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(428, 372);
+            this.ClientSize = new System.Drawing.Size(445, 372);
             this.Controls.Add(this.groupPanel1);
             this.DoubleBuffered = true;
             this.EnableGlass = false;
@@ -416,6 +424,7 @@
             this.groupPanel3.ResumeLayout(false);
             this.groupPanel2.ResumeLayout(false);
             this.groupPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -441,5 +450,6 @@
         private DevComponents.DotNetBar.ButtonX btnDelete;
         private DevComponents.DotNetBar.ButtonX btnSave;
         private DevComponents.DotNetBar.ButtonX btnSearch;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

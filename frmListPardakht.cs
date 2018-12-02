@@ -31,8 +31,6 @@ namespace Matab
             mskTarikh.Text = P.GetYear(DateTime.Now).ToString() + P.GetMonth(DateTime.Now).ToString("0#") + P.GetDayOfMonth(DateTime.Now).ToString("0#");
             mskAzTarikh.Text = P.GetYear(DateTime.Now).ToString() + P.GetMonth(DateTime.Now).ToString("0#") + P.GetDayOfMonth(DateTime.Now).ToString("0#");
             mskTaTarikh.Text = P.GetYear(DateTime.Now).ToString() + P.GetMonth(DateTime.Now).ToString("0#") + P.GetDayOfMonth(DateTime.Now.AddDays(1)).ToString("0#");
-
-
             Display();
         }
 
@@ -64,6 +62,7 @@ namespace Matab
                 int x = Convert.ToInt32(dgvListPardakht.SelectedCells[0].Value);
                 query.ExecuteQueries("delete from tblPardakht where ID=" + x);
                 MessageBox.Show("عملیات با موفقیت انجام شد", "Matab", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Display();
             }
             catch (Exception)
             {
